@@ -49,7 +49,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/titleUsersS"
+            android:id="@+id/titleGradesS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
@@ -63,7 +63,7 @@
             android:id="@+id/scrollViewS"
             android:layout_width="match_parent"
             android:layout_height="419dp"
-            android:layout_below="@+id/titleUsersS"
+            android:layout_below="@+id/titleGradesS"
             android:layout_marginTop="30dp"
             tools:ignore="SpeakableTextPresentCheck">
 

@@ -67,11 +67,11 @@ class StudentMainActivity : AppCompatActivity() {
             throw mIOException
         }
 
-        /*val id : String? = intent.getStringExtra("iduser")
+        val id : String? = intent.getStringExtra("idUser")
 
         println("auishdiuaefuiaelfewuafuiyeuaiyfiuaeyfiuyueifueyfiuaeiufyiueayfiueayufiaeusfuyegsafuiguyeagfuieagfyaegsfukgaeyugfiueagfyuagefukyuasgfuaesgfyusgaefuigauyefguaesgfuyesgafugsaeyufgiuleasgfykegafluiagfuaegsifeue "+id)
 
-        val sql = "SELECT lateHours from RecordBook WHERE RecordBook.student = $id"
+        /*val sql = "SELECT lateHours from RecordBook WHERE RecordBook.student = $id"
         val cursor: Cursor = database.rawQuery(sql, null)
         val recordBook: HashMap<String, Any> = HashMap<String, Any>()
         cursor.moveToFirst ()

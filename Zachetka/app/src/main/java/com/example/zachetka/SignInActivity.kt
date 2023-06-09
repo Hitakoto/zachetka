@@ -62,7 +62,7 @@ class SignInActivity : AppCompatActivity() {
             if (loginText.text.toString() == "" || passwordText.text.toString() == "") {
                 Toast.makeText(this, "Не введены логин или пароль", Toast.LENGTH_LONG).show()
             } else {
-                val sql = "SELECT login, password, role FROM Users WHERE login = '" + loginText.text.toString() + "' AND password = '" + passwordText.text.toString() + "'"
+                val sql = "SELECT idUser login, password, role FROM Users WHERE login = '" + loginText.text.toString() + "' AND password = '" + passwordText.text.toString() + "'"
                 val cursor: Cursor = database.rawQuery(sql, null)
                 if (cursor.count !== 0) {
                     Toast.makeText(this, "Авторизация", Toast.LENGTH_LONG).show()
@@ -70,14 +70,21 @@ class SignInActivity : AppCompatActivity() {
                     cursor.moveToFirst()
                     while (!cursor.isAfterLast) {
                         user["role"] = cursor.getString(2)
+                        user.put("idU", cursor.getString(0));
                         cursor.moveToNext()
                     }
                     if (user["role"] == "Администратор") {
-                        startActivity(Intent(this, AdminMainActivity::class.java))
+                        var intentA = Intent(this, AdminMainActivity::class.java)
+                        intentA.putExtra("idUser", user["idU"].toString());
+                        startActivity(intentA)
                     } else if (user["role"] == "Преподаватель") {
-                        startActivity(Intent(this, TeacherMainActivity::class.java))
+                        var intentT = Intent(this, TeacherMainActivity::class.java)
+                        intentT.putExtra("idUser", user["idU"].toString());
+                        startActivity(intentT)
                     } else if (user["role"] == "Студент") {
-                        startActivity(Intent(this, StudentMainActivity::class.java))
+                        var intentS = Intent(this, StudentMainActivity::class.java)
+                        intentS.putExtra("idUser", user["idU"].toString());
+                        startActivity(intentS)
                     }
                 } else {
                     Toast.makeText(this, "Неверный логин или пароль", Toast.LENGTH_LONG).show()

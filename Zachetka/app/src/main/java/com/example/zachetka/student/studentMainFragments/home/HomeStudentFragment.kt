@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.zachetka.R
+import com.example.zachetka.admin.AdminMainActivity
 import com.example.zachetka.student.StudentRecordActivity
 import com.example.zachetka.dbHelper.DBHelper
 import java.io.IOException
@@ -34,8 +35,12 @@ class HomeStudentFragment : Fragment() {
 
         ivbRecord = v.findViewById(R.id.ivb_recS)
 
+        val id : String? = activity?.intent?.getStringExtra("idUser")
+
         ivbRecord.setOnClickListener(View.OnClickListener { _ ->
-            startActivity(Intent(activity, StudentRecordActivity::class.java))
+            var intentSRA = Intent(activity, StudentRecordActivity::class.java)
+            intentSRA.putExtra("idUser", id.toString());
+            startActivity(intentSRA)
         })
 
         linRet = v.findViewById(R.id.linearRatingsS)
@@ -58,7 +63,7 @@ class HomeStudentFragment : Fragment() {
         val layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 1f)
         layoutParams.weight = 1f
 
-        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent", null)
+        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = $id", null)
         if (cursor.moveToFirst()) {
             do {
                 val row = TableRow(activity!!)

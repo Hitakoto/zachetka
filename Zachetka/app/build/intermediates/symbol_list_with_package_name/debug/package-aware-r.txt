@@ -2790,6 +2790,7 @@ id easeInOut
 id easeOut
 id east
 id editSearch
+id edit_mode_text
 id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
@@ -2874,6 +2875,7 @@ id linearUsers
 id listMode
 id list_item
 id locale
+id loginE
 id loginId
 id ltr
 id masked
@@ -2941,6 +2943,7 @@ id nameDisciplineMS
 id nameDisciplineMT
 id nameDisciplineSS
 id nameDisciplineST
+id nameE
 id nameGradeS
 id nameGradeT
 id nameLate
@@ -3008,10 +3011,12 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id passwordE
 id passwordId
 id password_toggle
 id path
 id pathRelative
+id patronymicE
 id peekHeight
 id percent
 id pin
@@ -3098,6 +3103,9 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerCourseMain
+id spinnerGroupsMain
+id spinnerStudentsMain
 id spline
 id split_action_bar
 id spread
@@ -3119,6 +3127,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id surnameE
 id tabMode
 id tableRecS
 id tableRecT
@@ -3141,10 +3150,13 @@ id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
 id text2
+id textCourseMain
 id textEnd
+id textGroupMain
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textStudentMain
 id textTop
 id text_input_end_icon
 id text_input_error_icon
@@ -3158,11 +3170,11 @@ id textinput_suffix_text
 id time
 id title
 id titleDividerNoCustom
+id titleGradesS
 id titleRB
 id titleRBS
 id titleRBT
 id titleUsers
-id titleUsersS
 id titleUsersT
 id title_template
 id toggle
@@ -3308,6 +3320,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_admin_main
+layout activity_edit_user_mode
 layout activity_sign_in
 layout activity_splash
 layout activity_student_main
@@ -3574,6 +3587,7 @@ string search_menu_title
 string status_bar_notification_info_overflow
 string text_book
 string text_confirm_info_user
+string text_course
 string text_description
 string text_description_person
 string text_description_person_edit
@@ -3584,6 +3598,7 @@ string text_email
 string text_email_person
 string text_examD
 string text_form
+string text_group
 string text_hourL
 string text_late
 string text_mark
@@ -3602,6 +3617,7 @@ string text_semestr
 string text_settings_user
 string text_sfp
 string text_sign_out
+string text_stud
 string text_surStud
 string text_surTea
 string text_tvb_about_app
@@ -3612,6 +3628,7 @@ string text_users
 string title_activity_admin_main
 string title_activity_main
 string title_activity_teacher_main
+string title_edit_mode
 string title_sign_in
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

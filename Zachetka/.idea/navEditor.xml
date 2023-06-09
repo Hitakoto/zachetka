@@ -146,7 +146,7 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="nav_home_student">
+                  <entry key="nav_home_teacher">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -158,7 +158,7 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="nav_month_student">
+                  <entry key="nav_month_teacher">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -170,7 +170,7 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="nav_semestr_student">
+                  <entry key="nav_semestr_teacher">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -182,13 +182,13 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="nav_settings_student">
+                  <entry key="nav_settings_teacher">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="256" />
+                            <option name="y" value="368" />
                           </Point>
                         </option>
                       </LayoutPositions>

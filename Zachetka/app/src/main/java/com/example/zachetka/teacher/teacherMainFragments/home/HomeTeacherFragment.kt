@@ -14,6 +14,7 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.zachetka.R
 import com.example.zachetka.dbHelper.DBHelper
+import com.example.zachetka.student.StudentRecordActivity
 import com.example.zachetka.teacher.TeacherRecordActivity
 import java.io.IOException
 
@@ -25,6 +26,8 @@ class HomeTeacherFragment : Fragment() {
     lateinit var linRet: LinearLayout
     lateinit var tableRet: TableLayout
 
+    lateinit var titleMonthName: TextView
+
     private lateinit var dbHelper: DBHelper
     private lateinit var database: SQLiteDatabase
 
@@ -33,9 +36,14 @@ class HomeTeacherFragment : Fragment() {
         v = inflater.inflate(R.layout.fragment_home_teacher, container, false)
 
         ivbRecord = v.findViewById(R.id.ivb_recT)
+        titleMonthName = v.findViewById(R.id.titleUsersT)
+
+        val id : String? = activity?.intent?.getStringExtra("idUser")
 
         ivbRecord.setOnClickListener(View.OnClickListener { _ ->
-            startActivity(Intent(activity, TeacherRecordActivity::class.java))
+            var intentTRA = Intent(activity, TeacherRecordActivity::class.java)
+            intentTRA.putExtra("idUser", id.toString());
+            startActivity(intentTRA)
         })
 
         linRet = v.findViewById(R.id.linearRatingsT)
@@ -58,7 +66,7 @@ class HomeTeacherFragment : Fragment() {
         val layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 1f)
         layoutParams.weight = 1f
 
-        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent", null)
+        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent", null)
         if (cursor.moveToFirst()) {
             do {
                 val row = TableRow(activity!!)
@@ -73,6 +81,10 @@ class HomeTeacherFragment : Fragment() {
                 textGrade.setTextColor(Color.rgb(24, 79, 154))
                 textGrade.gravity = Gravity.CENTER
                 textGrade.textAlignment = View.TEXT_ALIGNMENT_CENTER
+
+                var titleMonth: String = cursor.getString(2).toString() + " "
+
+                titleMonthName.text = "Аттестация за $titleMonth"
 
                 row.addView(textDis, layoutParams)
                 row.addView(textGrade, layoutParams)

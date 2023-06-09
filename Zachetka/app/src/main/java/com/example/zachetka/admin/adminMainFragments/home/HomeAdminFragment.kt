@@ -10,12 +10,10 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TableLayout
-import android.widget.TableRow
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.zachetka.R
+import com.example.zachetka.admin.EditUserModeActivity
 import com.example.zachetka.dbHelper.DBHelper
 import com.example.zachetka.student.StudentRecordActivity
 import java.io.IOException
@@ -27,6 +25,8 @@ class HomeAdminFragment : Fragment() {
     lateinit var linRet: LinearLayout
     lateinit var tableRet: TableLayout
 
+    lateinit var btnEditMode: Button
+
     private lateinit var dbHelper: DBHelper
     private lateinit var database: SQLiteDatabase
 
@@ -36,6 +36,12 @@ class HomeAdminFragment : Fragment() {
 
         linRet = v.findViewById(R.id.linearUsers)
         tableRet = v.findViewById(R.id.users)
+
+        btnEditMode = v.findViewById(R.id.btnEditMode)
+
+        btnEditMode.setOnClickListener(View.OnClickListener { _ ->
+            startActivity(Intent(activity, EditUserModeActivity::class.java))
+        })
 
         dbHelper = DBHelper(activity!!)
 

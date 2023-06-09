@@ -27,6 +27,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.MarkPGT" >
         <activity
+            android:name="com.example.zachetka.admin.EditUserModeActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.zachetka.teacher.TeacherMainActivity"
             android:exported="false"
             android:label="@string/title_activity_teacher_main"

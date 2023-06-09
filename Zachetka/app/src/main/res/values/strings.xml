@@ -19,7 +19,7 @@
     <string name="menu_settings">Настройки</string>
 
     <string name="text_rec_book">Зачетная книжка студента</string>
-    <string name="text_marks">Оценки</string>
+    <string name="text_marks">Аттестация</string>
     <string name="text_users">Пользователи системы</string>
     <string name="text_prom">Промежуточная аттестация</string>
 
@@ -66,4 +66,10 @@
     <string name="text_tvb_about_app">О приложении</string>
     <string name="title_activity_admin_main">AdminMainActivity</string>
     <string name="title_activity_teacher_main">TeacherMainActivity</string>
+
+    <string name="title_edit_mode">Режим редактирования</string>
+
+    <string name="text_stud">ФИО студента</string>
+    <string name="text_group">Группа</string>
+    <string name="text_course">Курс</string>
 </resources>

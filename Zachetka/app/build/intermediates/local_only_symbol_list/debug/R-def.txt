@@ -63,6 +63,7 @@ id disciplineS
 id disciplineT
 id drawer_layout
 id editSearch
+id edit_mode_text
 id emailUser
 id gradeS
 id gradeT
@@ -78,6 +79,7 @@ id linearRatingsT
 id linearRecS
 id linearRecT
 id linearUsers
+id loginE
 id loginId
 id mobile_navigation
 id mobile_navigation2
@@ -87,6 +89,7 @@ id nameDisciplineMS
 id nameDisciplineMT
 id nameDisciplineSS
 id nameDisciplineST
+id nameE
 id nameGradeS
 id nameGradeT
 id nameLate
@@ -122,7 +125,9 @@ id nav_settings_teacher
 id nav_viewA
 id nav_viewS
 id nav_viewT
+id passwordE
 id passwordId
+id patronymicE
 id quantityLateS
 id quantityLateT
 id ratingsMS
@@ -149,13 +154,20 @@ id scrollViewT
 id scrollViewU
 id sign_icon
 id sign_text
+id spinnerCourseMain
+id spinnerGroupsMain
+id spinnerStudentsMain
+id surnameE
 id tableRecS
 id tableRecT
+id textCourseMain
+id textGroupMain
+id textStudentMain
+id titleGradesS
 id titleRB
 id titleRBS
 id titleRBT
 id titleUsers
-id titleUsersS
 id titleUsersT
 id toolbar
 id tvbDesignA
@@ -172,6 +184,7 @@ id tvbSignOutS
 id tvbSignOutT
 id users
 layout activity_admin_main
+layout activity_edit_user_mode
 layout activity_sign_in
 layout activity_splash
 layout activity_student_main
@@ -223,6 +236,7 @@ string navigation_drawer_close
 string navigation_drawer_open
 string text_book
 string text_confirm_info_user
+string text_course
 string text_description
 string text_description_person
 string text_description_person_edit
@@ -233,6 +247,7 @@ string text_email
 string text_email_person
 string text_examD
 string text_form
+string text_group
 string text_hourL
 string text_late
 string text_mark
@@ -251,6 +266,7 @@ string text_semestr
 string text_settings_user
 string text_sfp
 string text_sign_out
+string text_stud
 string text_surStud
 string text_surTea
 string text_tvb_about_app
@@ -261,6 +277,7 @@ string text_users
 string title_activity_admin_main
 string title_activity_main
 string title_activity_teacher_main
+string title_edit_mode
 string title_sign_in
 style Theme.MarkPGT
 style Theme.MarkPGT.AppBarOverlay

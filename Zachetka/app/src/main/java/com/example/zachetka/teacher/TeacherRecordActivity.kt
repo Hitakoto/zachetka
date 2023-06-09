@@ -48,6 +48,8 @@ class TeacherRecordActivity : AppCompatActivity() {
         val layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 1f)
         layoutParams.weight = 1f
 
+        //SELECT Discipline.nameDis, FormsAttestations.title, PromezhAttestation.date, PromezhAttestation.grade FROM PromezhAttestation, Discipline, Students, FormsAttestations, Users, Groups, Teachers WHERE Users.idUser = Students.idUser AND Discipline.idDiscipline = PromezhAttestation.idDiscipline AND PromezhAttestation.idStudent = Students.idStudent AND FormsAttestations.idForm = PromezhAttestation.idForm AND Students.idGroup = Groups.idGroup AND Groups.idTeacher = Teachers.idTeacher AND Teachers.idUser = Users.idUser AND Users.idUser = $id
+
         val cursor = database.rawQuery("SELECT Discipline.nameDis, FormsAttestations.title, PromezhAttestation.date, PromezhAttestation.grade FROM PromezhAttestation, Discipline, Students, FormsAttestations, Users WHERE Users.idUser = Students.idUser AND Discipline.idDiscipline = PromezhAttestation.idDiscipline AND PromezhAttestation.idStudent = Students.idStudent AND FormsAttestations.idForm = PromezhAttestation.idForm", null)
         if (cursor.moveToFirst()) {
             do {

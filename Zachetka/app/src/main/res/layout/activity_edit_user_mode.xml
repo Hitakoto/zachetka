@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".admin.EditUserModeActivity">
+
+    <TextView
+        android:id="@+id/edit_mode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/rubik"
+        android:text="@string/title_edit_mode"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/surnameE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_mode_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/design_text_fiend"
+        android:ems="10"
+        android:hint="@string/hint_login"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:fontFamily="@font/rubik"
+        android:digits="1234567890"
+        android:textColorHint="@color/button_color"
+        android:textColor="@color/button_color"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/nameE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surnameE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/design_text_fiend"
+        android:ems="10"
+        android:hint="@string/hint_login"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:fontFamily="@font/rubik"
+        android:digits="1234567890"
+        android:textColorHint="@color/button_color"
+        android:textColor="@color/button_color"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/patronymicE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/design_text_fiend"
+        android:ems="10"
+        android:hint="@string/hint_login"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:fontFamily="@font/rubik"
+        android:digits="1234567890"
+        android:textColorHint="@color/button_color"
+        android:textColor="@color/button_color"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/loginE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patronymicE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/design_text_fiend"
+        android:ems="10"
+        android:hint="@string/hint_login"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:fontFamily="@font/rubik"
+        android:digits="1234567890"
+        android:textColorHint="@color/button_color"
+        android:textColor="@color/button_color"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/passwordE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/design_text_fiend"
+        android:ems="10"
+        android:hint="@string/hint_login"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:fontFamily="@font/rubik"
+        android:digits="1234567890"
+        android:textColorHint="@color/button_color"
+        android:textColor="@color/button_color"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+</RelativeLayout>

@@ -48,7 +48,9 @@ class StudentRecordActivity : AppCompatActivity() {
         val layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 1f)
         layoutParams.weight = 1f
 
-        val cursor = database.rawQuery("SELECT Discipline.nameDis, FormsAttestations.title, PromezhAttestation.date, PromezhAttestation.grade FROM PromezhAttestation, Discipline, Students, FormsAttestations, Users WHERE Users.idUser = Students.idUser AND Discipline.idDiscipline = PromezhAttestation.idDiscipline AND PromezhAttestation.idStudent = Students.idStudent AND FormsAttestations.idForm = PromezhAttestation.idForm", null)
+        val id : String? = intent.getStringExtra("idUser")
+
+        val cursor = database.rawQuery("SELECT Discipline.nameDis, FormsAttestations.title, PromezhAttestation.date, PromezhAttestation.grade FROM PromezhAttestation, Discipline, Students, FormsAttestations, Users WHERE Users.idUser = Students.idUser AND Discipline.idDiscipline = PromezhAttestation.idDiscipline AND PromezhAttestation.idStudent = Students.idStudent AND FormsAttestations.idForm = PromezhAttestation.idForm AND Users.idUser = $id", null)
         if (cursor.moveToFirst()) {
             do {
                 val row = TableRow(this)

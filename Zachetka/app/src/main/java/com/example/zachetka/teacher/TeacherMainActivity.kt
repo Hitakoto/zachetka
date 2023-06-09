@@ -67,6 +67,9 @@ class TeacherMainActivity : AppCompatActivity() {
             throw mIOException
         }
 
+        //Для вывода данных о курирующей группе
+        //SELECT Groups.title FROM Groups, Teachers, Users WHERE Groups.idTeacher = Teachers.idTeacher AND Teachers.idUser = Users.idUser AND Users.idUser = $id
+
         /*val id : String? = intent.getStringExtra("iduser")
 
         println("auishdiuaefuiaelfewuafuiyeuaiyfiuaeyfiuyueifueyfiuaeiufyiueayfiueayufiaeusfuyegsafuiguyeagfuieagfyaegsfukgaeyugfiueagfyuagefukyuasgfuaesgfyusgaefuigauyefguaesgfuyesgafugsaeyufgiuleasgfykegafluiagfuaegsifeue "+id)

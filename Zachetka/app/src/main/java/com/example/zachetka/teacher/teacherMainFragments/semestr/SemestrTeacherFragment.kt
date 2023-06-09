@@ -52,7 +52,9 @@ class SemestrTeacherFragment : Fragment() {
         val layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 1f)
         layoutParams.weight = 1f
 
-        val cursor = database.rawQuery("SELECT Discipline.nameDis, SemestrAttestation.semestr, SemestrAttestation.grade FROM SemestrAttestation, Discipline, Students WHERE SemestrAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = SemestrAttestation.idStudent", null)
+        val id : String? = activity?.intent?.getStringExtra("idUser")
+
+        val cursor = database.rawQuery("SELECT Discipline.nameDis, SemestrAttestation.semestr, SemestrAttestation.grade FROM SemestrAttestation, Discipline, Students, Groups, Teachers, Users WHERE SemestrAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = SemestrAttestation.idStudent AND Students.idGroup = Groups.idGroup AND Groups.idTeacher = Teachers.idTeacher AND Teachers.idUser = Users.idUser AND Users.idUser = $id", null)
         if (cursor.moveToFirst()) {
             do {
                 val row = TableRow(activity!!)
