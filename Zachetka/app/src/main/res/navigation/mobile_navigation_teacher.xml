@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home_teacher">
+
+    <fragment
+        android:id="@+id/nav_home_teacher"
+        android:name="com.example.zachetka.teacher.teacherMainFragments.home.HomeTeacherFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home_teacher" />
+
+    <fragment
+        android:id="@+id/nav_month_teacher"
+        android:name="com.example.zachetka.teacher.teacherMainFragments.month.MonthTeacherFragment"
+        android:label="@string/menu_month"
+        tools:layout="@layout/fragment_month_teacher" />
+
+    <fragment
+        android:id="@+id/nav_semestr_teacher"
+        android:name="com.example.zachetka.teacher.teacherMainFragments.semestr.SemestrTeacherFragment"
+        android:label="@string/menu_semestr"
+        tools:layout="@layout/fragment_semestr_teacher" />
+
+    <fragment
+        android:id="@+id/nav_settings_teacher"
+        android:name="com.example.zachetka.teacher.teacherMainFragments.settings.SettingsTeacherFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings_teacher" />
+</navigation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".teacher.teacherMainFragments.month.MonthTeacherFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_personT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/design_text_fiend">
+
+        <TextView
+            android:id="@+id/nameGradeT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="@string/menu_month"
+            android:textAlignment="center"
+            android:textColor="@color/button_color"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:id="@+id/scrollViewMT"
+            android:layout_width="match_parent"
+            android:layout_height="419dp"
+            android:layout_below="@+id/nameGradeT"
+            android:layout_marginTop="30dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/linearRatingsMT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/ratingsMT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/nameDisciplineMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rubik_bold"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="@string/text_discipline"
+                            android:textAlignment="center"
+                            android:textColor="@color/button_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/nameMonthMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rubik_bold"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="@string/text_month"
+                            android:textAlignment="center"
+                            android:textColor="@color/button_color"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/nameMarkMT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rubik_bold"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="@string/text_mark"
+                            android:textAlignment="center"
+                            android:textColor="@color/button_color"
+                            android:textSize="16dp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

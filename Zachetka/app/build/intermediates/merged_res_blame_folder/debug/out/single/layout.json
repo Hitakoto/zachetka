@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/app_bar_student_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/app_bar_student_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/content_student_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/content_student_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_student_record.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_student_record.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_semestr_teacher.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_semestr_teacher.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_admin_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_admin_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_home_teacher.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_home_teacher.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/nav_header_admin_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/nav_header_admin_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/app_bar_teacher_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/app_bar_teacher_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_home_student.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_home_student.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_semestr_student.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_semestr_student.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/nav_header_teacher_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/nav_header_teacher_main.xml"
+    },
+    {
+        "merged": "com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_home_teacher.xml",
+        "source": "com.example.zachetka.app-main-46:/layout/fragment_home_teacher.xml"
+    },
+    {
+        "merged": "com.example.zachetka.app-mergeDebugResources-43:/layout/activity_teacher_main.xml",
+        "source": "com.example.zachetka.app-main-46:/layout/activity_teacher_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_settings_student.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_settings_student.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/content_admin_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/content_admin_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_teacher_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_teacher_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/nav_header_student_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/nav_header_student_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_sign_in.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_teacher_record.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_teacher_record.xml"
+    },
+    {
+        "merged": "com.example.zachetka.app-mergeDebugResources-43:/layout/app_bar_teacher_main.xml",
+        "source": "com.example.zachetka.app-main-46:/layout/app_bar_teacher_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_settings_admin.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_settings_admin.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_month_teacher.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_month_teacher.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_splash.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/app_bar_admin_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/app_bar_admin_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_student_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_student_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_settings_teacher.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_settings_teacher.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/content_teacher_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/content_teacher_main.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_month_student.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_month_student.xml"
+    },
+    {
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_home_admin.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_home_admin.xml"
+    }
+]

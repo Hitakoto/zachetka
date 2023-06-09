@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    tools:context=".student.StudentRecordActivity">
+
+    <TextView
+        android:id="@+id/nameBookS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rubik"
+        android:shadowColor="#68B2DA"
+        android:shadowDx="0"
+        android:shadowDy="10"
+        android:shadowRadius="5"
+        android:text="@string/text_book"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        tools:ignore="SpUsage,TextContrastCheck" />
+
+    <RelativeLayout
+        android:id="@+id/relativeRBS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameBookS"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/background_info"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titleRBS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/rubik_bold"
+            android:text="@string/text_prom"
+            android:textAlignment="center"
+            android:textColor="@color/button_color"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:id="@+id/scrollViewRBS"
+            android:layout_width="match_parent"
+            android:layout_height="419dp"
+            android:layout_below="@+id/titleRBS"
+            android:layout_marginTop="10dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:id="@+id/linearRecS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/titleRB"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/tableRecS"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/rubik_bold"
+                            android:textColor="@color/button_color"
+                            android:textStyle="bold"
+                            android:text="@string/text_discipline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rubik_bold"
+                            android:textColor="@color/button_color"
+                            android:gravity="center"
+                            android:text="@string/text_form"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/rubik_bold"
+                            android:textColor="@color/button_color"
+                            android:gravity="center"
+                            android:text="@string/text_examD"
+                            android:textAlignment="center"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/rubik_bold"
+                            android:textColor="@color/button_color"
+                            android:textStyle="bold"
+                            android:text="@string/text_score" />
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

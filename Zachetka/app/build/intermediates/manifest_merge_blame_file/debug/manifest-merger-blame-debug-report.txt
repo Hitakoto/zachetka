@@ -1,0 +1,197 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.markpgt"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.markpgt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.markpgt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:6:5-77:19
+18        android:allowBackup="true"
+18-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:7:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:8:9-65
+21        android:debuggable="true"
+22        android:fullBackupContent="@xml/backup_rules"
+22-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:9:9-54
+23        android:icon="@drawable/icon"
+23-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:10:9-38
+24        android:label="@string/app_name"
+24-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:11:9-41
+25        android:roundIcon="@drawable/icon"
+25-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:12:9-43
+26        android:supportsRtl="true"
+26-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:13:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.MarkPGT" >
+28-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:14:9-45
+29        <activity
+29-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:16:9-24:20
+30            android:name="com.example.zachetka.teacher.TeacherMainActivity"
+30-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:17:13-56
+31            android:exported="false"
+31-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:18:13-37
+32            android:label="@string/title_activity_teacher_main"
+32-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:19:13-64
+33            android:theme="@style/Theme.MarkPGT.NoActionBar" >
+33-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:20:13-61
+34            <meta-data
+34-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:21:13-23:36
+35                android:name="android.app.lib_name"
+35-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:22:17-52
+36                android:value="" />
+36-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:23:17-33
+37        </activity>
+38        <activity
+38-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:25:9-32:20
+39            android:name="com.example.zachetka.teacher.TeacherRecordActivity"
+39-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:26:13-58
+40            android:exported="false"
+40-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:27:13-37
+41            android:screenOrientation="landscape" >
+41-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:28:13-50
+42            <meta-data
+42-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:21:13-23:36
+43                android:name="android.app.lib_name"
+43-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:22:17-52
+44                android:value="" />
+44-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:23:17-33
+45        </activity>
+46        <activity
+46-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:33:9-39:20
+47            android:name="com.example.zachetka.admin.AdminMainActivity"
+47-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:34:13-52
+48            android:exported="false" >
+48-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:35:13-37
+49            <meta-data
+49-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:21:13-23:36
+50                android:name="android.app.lib_name"
+50-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:22:17-52
+51                android:value="" />
+51-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:23:17-33
+52        </activity>
+53        <activity
+53-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:40:9-47:20
+54            android:name="com.example.zachetka.student.StudentRecordActivity"
+54-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:41:13-58
+55            android:exported="false"
+55-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:42:13-37
+56            android:screenOrientation="landscape" >
+56-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:43:13-50
+57            <meta-data
+57-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:21:13-23:36
+58                android:name="android.app.lib_name"
+58-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:22:17-52
+59                android:value="" />
+59-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:23:17-33
+60        </activity>
+61        <activity
+61-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:48:9-56:20
+62            android:name="com.example.zachetka.student.StudentMainActivity"
+62-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:49:13-56
+63            android:exported="false"
+63-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:50:13-37
+64            android:label="@string/title_activity_main"
+64-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:51:13-56
+65            android:theme="@style/Theme.MarkPGT.NoActionBar" >
+65-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:52:13-61
+66            <meta-data
+66-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:21:13-23:36
+67                android:name="android.app.lib_name"
+67-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:22:17-52
+68                android:value="" />
+68-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:23:17-33
+69        </activity>
+70        <activity
+70-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:57:9-63:20
+71            android:name="com.example.zachetka.SignInActivity"
+71-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:58:13-43
+72            android:exported="false" >
+72-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:59:13-37
+73            <meta-data
+73-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:21:13-23:36
+74                android:name="android.app.lib_name"
+74-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:22:17-52
+75                android:value="" />
+75-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:23:17-33
+76        </activity>
+77        <activity
+77-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:64:9-72:20
+78            android:name="com.example.zachetka.SplachActivity"
+78-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:65:13-43
+79            android:exported="true" >
+79-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:66:13-36
+80            <intent-filter>
+80-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:67:13-71:29
+81                <action android:name="android.intent.action.MAIN" />
+81-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:68:17-69
+81-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:68:25-66
+82
+83                <category android:name="android.intent.category.LAUNCHER" />
+83-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:70:17-77
+83-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:70:27-74
+84            </intent-filter>
+85        </activity>
+86
+87        <meta-data
+87-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:74:9-76:57
+88            android:name="preloaded_fonts"
+88-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:75:13-43
+89            android:resource="@array/preloaded_fonts" />
+89-->/Users/2isp19/Desktop/Desktop-20230526T020443Z-001/Desktop/diplom-main/Zachetka/app/src/main/AndroidManifest.xml:76:13-54
+90
+91        <uses-library
+91-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+92            android:name="androidx.window.extensions"
+92-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+93            android:required="false" />
+93-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+94        <uses-library
+94-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+95            android:name="androidx.window.sidecar"
+95-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+96            android:required="false" />
+96-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+97
+98        <provider
+98-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+99            android:name="androidx.startup.InitializationProvider"
+99-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+100            android:authorities="com.example.markpgt.androidx-startup"
+100-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+101            android:exported="false" >
+101-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+102            <meta-data
+102-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+103-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+104                android:value="androidx.startup" />
+104-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+105            <meta-data
+105-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/2isp19/.gradle/caches/transforms-3/9cf225b11a9413fa15ce28a37c4fd7cf/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+106                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+106-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/2isp19/.gradle/caches/transforms-3/9cf225b11a9413fa15ce28a37c4fd7cf/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+107                android:value="androidx.startup" />
+107-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/2isp19/.gradle/caches/transforms-3/9cf225b11a9413fa15ce28a37c4fd7cf/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+108        </provider>
+109    </application>
+110
+111</manifest>
