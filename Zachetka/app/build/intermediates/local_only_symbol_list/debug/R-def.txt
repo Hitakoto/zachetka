@@ -56,6 +56,7 @@ font rubik_mono_one
 id app_bar_admin_main
 id app_bar_main
 id app_bar_teacher_main
+id attributesMain
 id btnEditMode
 id btn_sign_in
 id ctv_forgot_password
@@ -129,7 +130,6 @@ id passwordE
 id passwordId
 id patronymicE
 id quantityLateS
-id quantityLateT
 id ratingsMS
 id ratingsMT
 id ratingsS
@@ -154,13 +154,11 @@ id scrollViewT
 id scrollViewU
 id sign_icon
 id sign_text
-id spinnerCourseMain
 id spinnerGroupsMain
 id spinnerStudentsMain
 id surnameE
 id tableRecS
 id tableRecT
-id textCourseMain
 id textGroupMain
 id textStudentMain
 id titleGradesS

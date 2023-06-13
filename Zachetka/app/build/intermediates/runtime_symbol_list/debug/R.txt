@@ -2689,6 +2689,7 @@ int id app_bar_teacher_main 0x7f0a0053
 int id arc 0x7f0a0054
 int id asConfigured 0x7f0a0055
 int id async 0x7f0a0056
+int id attributesMain 0x7f0a0271
 int id auto 0x7f0a0057
 int id autoComplete 0x7f0a0058
 int id autoCompleteToEnd 0x7f0a0059
@@ -3024,7 +3025,6 @@ int id postLayout 0x7f0a019d
 int id progress_circular 0x7f0a019e
 int id progress_horizontal 0x7f0a019f
 int id quantityLateS 0x7f0a01a0
-int id quantityLateT 0x7f0a01a1
 int id radio 0x7f0a01a2
 int id ratingsMS 0x7f0a01a3
 int id ratingsMT 0x7f0a01a4
@@ -3102,7 +3102,6 @@ int id snapMargins 0x7f0a01eb
 int id south 0x7f0a01ec
 int id spacer 0x7f0a01ed
 int id special_effects_controller_view_tag 0x7f0a01ee
-int id spinnerCourseMain 0x7f0a0269
 int id spinnerGroupsMain 0x7f0a026a
 int id spinnerStudentsMain 0x7f0a026b
 int id spline 0x7f0a01ef
@@ -3149,7 +3148,6 @@ int id test_radiobutton_android_button_tint 0x7f0a0216
 int id test_radiobutton_app_button_tint 0x7f0a0217
 int id text 0x7f0a0218
 int id text2 0x7f0a0219
-int id textCourseMain 0x7f0a026c
 int id textEnd 0x7f0a021a
 int id textGroupMain 0x7f0a026d
 int id textSpacerNoButtons 0x7f0a021b

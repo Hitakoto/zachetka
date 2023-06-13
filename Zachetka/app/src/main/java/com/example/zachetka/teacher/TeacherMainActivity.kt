@@ -26,8 +26,6 @@ class TeacherMainActivity : AppCompatActivity() {
     private lateinit var dbHelper: DBHelper
     private lateinit var database: SQLiteDatabase
 
-    private lateinit var quantityLate: TextView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -50,8 +48,6 @@ class TeacherMainActivity : AppCompatActivity() {
 
         val customDialog = Dialog(this)
         customDialog.setContentView(R.layout.fragment_month_student)
-
-        quantityLate = findViewById(R.id.quantityLateT)
 
         dbHelper = DBHelper(this)
 

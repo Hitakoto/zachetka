@@ -44,6 +44,7 @@
         android:layout_below="@+id/ivb_recT"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/background_info"
         android:orientation="horizontal">
@@ -86,20 +87,6 @@
             android:layout_marginLeft="30dp"
             android:text="@string/text_group"/>
 
-        <TextView
-            android:id="@+id/textCourseMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textGroupMain"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/rubik_bold"
-            android:gravity="center"
-            android:text="@string/text_course"
-            android:textAlignment="center"
-            android:textColor="@color/button_color"
-            android:textSize="14dp" />
-
         <Spinner
             android:id="@+id/spinnerStudentsMain"
             android:layout_width="wrap_content"
@@ -118,20 +105,11 @@
             android:layout_marginRight="30dp"
             android:layout_alignParentRight="true"/>
 
-        <Spinner
-            android:id="@+id/spinnerCourseMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/spinnerGroupsMain"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:layout_alignParentRight="true"/>
-
         <ScrollView
             android:id="@+id/scrollViewT"
             android:layout_width="match_parent"
             android:layout_height="419dp"
-            android:layout_below="@+id/textCourseMain"
+            android:layout_below="@+id/textGroupMain"
             android:layout_marginTop="30dp"
             tools:ignore="SpeakableTextPresentCheck">
 
@@ -149,6 +127,7 @@
                     android:layout_height="match_parent">
 
                     <TableRow
+                        android:id="@+id/attributesMain"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -184,40 +163,5 @@
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/nameLateT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/rubik"
-        android:text="@string/text_late"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_alignParentBottom="true"
-        tools:ignore="SpUsage,TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/quantityLateT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentRight="true"
-        android:layout_toEndOf="@+id/nameLate"
-        android:fontFamily="@font/rubik"
-        android:shadowColor="#68B2DA"
-        android:textAlignment="textEnd"
-        android:text="0"
-        android:textColor="@color/white"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:ignore="SpUsage,TextContrastCheck" />
 
 </RelativeLayout>

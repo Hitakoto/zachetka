@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/app_bar_student_main.xml",
-        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/app_bar_student_main.xml"
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_student_record.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_student_record.xml"
     },
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/content_student_main.xml",
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/content_student_main.xml"
     },
     {
-        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_student_record.xml",
-        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/activity_student_record.xml"
+        "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/app_bar_student_main.xml",
+        "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/app_bar_student_main.xml"
     },
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/activity_edit_user_mode.xml",

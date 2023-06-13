@@ -2690,6 +2690,7 @@ id app_bar_teacher_main
 id arc
 id asConfigured
 id async
+id attributesMain
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3025,7 +3026,6 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id quantityLateS
-id quantityLateT
 id radio
 id ratingsMS
 id ratingsMT
@@ -3103,7 +3103,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id spinnerCourseMain
 id spinnerGroupsMain
 id spinnerStudentsMain
 id spline
@@ -3150,7 +3149,6 @@ id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
 id text2
-id textCourseMain
 id textEnd
 id textGroupMain
 id textSpacerNoButtons
