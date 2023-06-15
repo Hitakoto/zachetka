@@ -4,6 +4,7 @@ import android.content.Intent
 import android.database.SQLException
 import android.database.sqlite.SQLiteDatabase
 import android.graphics.Color
+import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
@@ -11,12 +12,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.example.zachetka.R
 import com.example.zachetka.admin.AdminMainActivity
 import com.example.zachetka.student.StudentRecordActivity
 import com.example.zachetka.dbHelper.DBHelper
 import java.io.IOException
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.format.TextStyle
+import java.util.*
 
 class HomeStudentFragment : Fragment() {
 
@@ -26,6 +32,9 @@ class HomeStudentFragment : Fragment() {
     lateinit var linRet: LinearLayout
     lateinit var tableRet: TableLayout
 
+    private lateinit var titleMonthName: TextView
+    lateinit var noneInfo: TextView
+
     private lateinit var dbHelper: DBHelper
     private lateinit var database: SQLiteDatabase
 
@@ -34,6 +43,9 @@ class HomeStudentFragment : Fragment() {
         v = inflater.inflate(R.layout.fragment_home_student, container, false)
 
         ivbRecord = v.findViewById(R.id.ivb_recS)
+
+        titleMonthName = v.findViewById(R.id.titleGradesS)
+        noneInfo = v.findViewById(R.id.noneInfoS)
 
         val id : String? = activity?.intent?.getStringExtra("idUser")
 
@@ -63,7 +75,17 @@ class HomeStudentFragment : Fragment() {
         val layoutParams = TableRow.LayoutParams(0, TableRow.LayoutParams.WRAP_CONTENT, 1f)
         layoutParams.weight = 1f
 
-        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = $id", null)
+        val currentDate = LocalDate.now()
+        val month = currentDate.month
+
+        val monthName = month.getDisplayName(TextStyle.FULL_STANDALONE, Locale("ru"))
+        val monthNameInGenitiveCase = monthName.take(monthName.length - 1) + "ь"
+
+        val formatter = DateTimeFormatter.ofPattern("LLLL", Locale("ru"))
+        val capitalizedMonthNameInGenitiveCase = monthNameInGenitiveCase.replaceFirstChar { it.uppercase() }
+        val formattedMonthName = capitalizedMonthNameInGenitiveCase.format(formatter)
+
+        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = $id AND MonthAttestation.month = '$formattedMonthName'", null)
         if (cursor.moveToFirst()) {
             do {
                 val row = TableRow(activity!!)
@@ -79,11 +101,18 @@ class HomeStudentFragment : Fragment() {
                 textGrade.gravity = Gravity.CENTER
                 textGrade.textAlignment = View.TEXT_ALIGNMENT_CENTER
 
+                titleMonthName.text = "Аттестация за $formattedMonthName"
+
                 row.addView(textDis, layoutParams)
                 row.addView(textGrade, layoutParams)
                 tableRet.addView(row)
             } while (cursor.moveToNext())
-        } else Log.d("mLog", "0 rows")
+        } else {
+            titleMonthName.text = "Аттестация за $formattedMonthName"
+            tableRet.visibility = View.GONE
+            noneInfo.visibility = View.VISIBLE
+            noneInfo.text = "Нет данных по аттестации"
+        }
         cursor.close()
 
         return v

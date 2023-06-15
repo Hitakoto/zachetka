@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -35,7 +36,19 @@ public final class ActivityTeacherRecordBinding implements ViewBinding {
   public final ScrollView scrollViewRBT;
 
   @NonNull
+  public final Spinner spinnerGroupsRBT;
+
+  @NonNull
+  public final Spinner spinnerStudentsRBT;
+
+  @NonNull
   public final TableLayout tableRecT;
+
+  @NonNull
+  public final TextView textGroupRBT;
+
+  @NonNull
+  public final TextView textStudentRBT;
 
   @NonNull
   public final TextView titleRBT;
@@ -43,13 +56,19 @@ public final class ActivityTeacherRecordBinding implements ViewBinding {
   private ActivityTeacherRecordBinding(@NonNull RelativeLayout rootView,
       @NonNull LinearLayout linearRecT, @NonNull TextView nameBookT,
       @NonNull RelativeLayout relativeRBT, @NonNull ScrollView scrollViewRBT,
-      @NonNull TableLayout tableRecT, @NonNull TextView titleRBT) {
+      @NonNull Spinner spinnerGroupsRBT, @NonNull Spinner spinnerStudentsRBT,
+      @NonNull TableLayout tableRecT, @NonNull TextView textGroupRBT,
+      @NonNull TextView textStudentRBT, @NonNull TextView titleRBT) {
     this.rootView = rootView;
     this.linearRecT = linearRecT;
     this.nameBookT = nameBookT;
     this.relativeRBT = relativeRBT;
     this.scrollViewRBT = scrollViewRBT;
+    this.spinnerGroupsRBT = spinnerGroupsRBT;
+    this.spinnerStudentsRBT = spinnerStudentsRBT;
     this.tableRecT = tableRecT;
+    this.textGroupRBT = textGroupRBT;
+    this.textStudentRBT = textStudentRBT;
     this.titleRBT = titleRBT;
   }
 
@@ -104,9 +123,33 @@ public final class ActivityTeacherRecordBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerGroupsRBT;
+      Spinner spinnerGroupsRBT = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerGroupsRBT == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerStudentsRBT;
+      Spinner spinnerStudentsRBT = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerStudentsRBT == null) {
+        break missingId;
+      }
+
       id = R.id.tableRecT;
       TableLayout tableRecT = ViewBindings.findChildViewById(rootView, id);
       if (tableRecT == null) {
+        break missingId;
+      }
+
+      id = R.id.textGroupRBT;
+      TextView textGroupRBT = ViewBindings.findChildViewById(rootView, id);
+      if (textGroupRBT == null) {
+        break missingId;
+      }
+
+      id = R.id.textStudentRBT;
+      TextView textStudentRBT = ViewBindings.findChildViewById(rootView, id);
+      if (textStudentRBT == null) {
         break missingId;
       }
 
@@ -117,7 +160,8 @@ public final class ActivityTeacherRecordBinding implements ViewBinding {
       }
 
       return new ActivityTeacherRecordBinding((RelativeLayout) rootView, linearRecT, nameBookT,
-          relativeRBT, scrollViewRBT, tableRecT, titleRBT);
+          relativeRBT, scrollViewRBT, spinnerGroupsRBT, spinnerStudentsRBT, tableRecT, textGroupRBT,
+          textStudentRBT, titleRBT);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

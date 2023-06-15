@@ -44,6 +44,9 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
   public final TextView nameRecBookT;
 
   @NonNull
+  public final TextView noneInfoT;
+
+  @NonNull
   public final TableLayout ratingsT;
 
   @NonNull
@@ -70,7 +73,7 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
   private FragmentHomeTeacherBinding(@NonNull RelativeLayout rootView,
       @NonNull TableRow attributesMain, @NonNull TextView disciplineT, @NonNull TextView gradeT,
       @NonNull ImageView ivbRecT, @NonNull LinearLayout linearRatingsT,
-      @NonNull TextView nameRecBookT, @NonNull TableLayout ratingsT,
+      @NonNull TextView nameRecBookT, @NonNull TextView noneInfoT, @NonNull TableLayout ratingsT,
       @NonNull RelativeLayout relativeT, @NonNull ScrollView scrollViewT,
       @NonNull Spinner spinnerGroupsMain, @NonNull Spinner spinnerStudentsMain,
       @NonNull TextView textGroupMain, @NonNull TextView textStudentMain,
@@ -82,6 +85,7 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
     this.ivbRecT = ivbRecT;
     this.linearRatingsT = linearRatingsT;
     this.nameRecBookT = nameRecBookT;
+    this.noneInfoT = noneInfoT;
     this.ratingsT = ratingsT;
     this.relativeT = relativeT;
     this.scrollViewT = scrollViewT;
@@ -155,6 +159,12 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.noneInfoT;
+      TextView noneInfoT = ViewBindings.findChildViewById(rootView, id);
+      if (noneInfoT == null) {
+        break missingId;
+      }
+
       id = R.id.ratingsT;
       TableLayout ratingsT = ViewBindings.findChildViewById(rootView, id);
       if (ratingsT == null) {
@@ -204,8 +214,9 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
       }
 
       return new FragmentHomeTeacherBinding((RelativeLayout) rootView, attributesMain, disciplineT,
-          gradeT, ivbRecT, linearRatingsT, nameRecBookT, ratingsT, relativeT, scrollViewT,
-          spinnerGroupsMain, spinnerStudentsMain, textGroupMain, textStudentMain, titleUsersT);
+          gradeT, ivbRecT, linearRatingsT, nameRecBookT, noneInfoT, ratingsT, relativeT,
+          scrollViewT, spinnerGroupsMain, spinnerStudentsMain, textGroupMain, textStudentMain,
+          titleUsersT);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -28,11 +28,57 @@
             android:textColor="@color/button_color"
             android:textSize="20dp" />
 
+        <TextView
+            android:id="@+id/textGroupSem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameGradeT"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/button_color"
+            android:textSize="14dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/text_group"/>
+
+        <TextView
+            android:id="@+id/textStudentSem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textGroupSem"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:text="@string/text_stud"
+            android:textAlignment="center"
+            android:textColor="@color/button_color"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/spinnerGroupsSem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameGradeT"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"/>
+
+        <Spinner
+            android:id="@+id/spinnerStudentsSem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerGroupsSem"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp" />
+
         <ScrollView
             android:id="@+id/scrollViewST"
             android:layout_width="match_parent"
             android:layout_height="419dp"
-            android:layout_below="@+id/nameGradeT"
+            android:layout_below="@+id/textStudentSem"
             android:layout_marginTop="30dp"
             tools:ignore="SpeakableTextPresentCheck">
 

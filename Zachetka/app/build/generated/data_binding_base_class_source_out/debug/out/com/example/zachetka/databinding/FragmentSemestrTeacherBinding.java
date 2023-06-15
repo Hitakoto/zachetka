@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -46,11 +47,25 @@ public final class FragmentSemestrTeacherBinding implements ViewBinding {
   @NonNull
   public final ScrollView scrollViewST;
 
+  @NonNull
+  public final Spinner spinnerGroupsSem;
+
+  @NonNull
+  public final Spinner spinnerStudentsSem;
+
+  @NonNull
+  public final TextView textGroupSem;
+
+  @NonNull
+  public final TextView textStudentSem;
+
   private FragmentSemestrTeacherBinding(@NonNull RelativeLayout rootView,
       @NonNull LinearLayout linearRatingsST, @NonNull TextView nameDisciplineST,
       @NonNull TextView nameGradeT, @NonNull TextView nameMarkST, @NonNull TextView nameSemestrST,
       @NonNull TableLayout ratingsST, @NonNull RelativeLayout relativePersonT,
-      @NonNull ScrollView scrollViewST) {
+      @NonNull ScrollView scrollViewST, @NonNull Spinner spinnerGroupsSem,
+      @NonNull Spinner spinnerStudentsSem, @NonNull TextView textGroupSem,
+      @NonNull TextView textStudentSem) {
     this.rootView = rootView;
     this.linearRatingsST = linearRatingsST;
     this.nameDisciplineST = nameDisciplineST;
@@ -60,6 +75,10 @@ public final class FragmentSemestrTeacherBinding implements ViewBinding {
     this.ratingsST = ratingsST;
     this.relativePersonT = relativePersonT;
     this.scrollViewST = scrollViewST;
+    this.spinnerGroupsSem = spinnerGroupsSem;
+    this.spinnerStudentsSem = spinnerStudentsSem;
+    this.textGroupSem = textGroupSem;
+    this.textStudentSem = textStudentSem;
   }
 
   @Override
@@ -137,9 +156,33 @@ public final class FragmentSemestrTeacherBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerGroupsSem;
+      Spinner spinnerGroupsSem = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerGroupsSem == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerStudentsSem;
+      Spinner spinnerStudentsSem = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerStudentsSem == null) {
+        break missingId;
+      }
+
+      id = R.id.textGroupSem;
+      TextView textGroupSem = ViewBindings.findChildViewById(rootView, id);
+      if (textGroupSem == null) {
+        break missingId;
+      }
+
+      id = R.id.textStudentSem;
+      TextView textStudentSem = ViewBindings.findChildViewById(rootView, id);
+      if (textStudentSem == null) {
+        break missingId;
+      }
+
       return new FragmentSemestrTeacherBinding((RelativeLayout) rootView, linearRatingsST,
           nameDisciplineST, nameGradeT, nameMarkST, nameSemestrST, ratingsST, relativePersonT,
-          scrollViewST);
+          scrollViewST, spinnerGroupsSem, spinnerStudentsSem, textGroupSem, textStudentSem);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

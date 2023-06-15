@@ -2790,7 +2790,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editSearch
 id edit_mode_text
 id edit_query
 id edittext_dropdown_editable
@@ -2947,8 +2946,6 @@ id nameDisciplineST
 id nameE
 id nameGradeS
 id nameGradeT
-id nameLate
-id nameLateS
 id nameLateT
 id nameMarkMS
 id nameMarkMT
@@ -2995,6 +2992,8 @@ id neverCompleteToStart
 id noScroll
 id noState
 id none
+id noneInfoS
+id noneInfoT
 id normal
 id north
 id notification_background
@@ -3025,7 +3024,6 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
-id quantityLateS
 id radio
 id ratingsMS
 id ratingsMT
@@ -3104,7 +3102,14 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinnerGroupsMain
+id spinnerGroupsMonth
+id spinnerGroupsRBT
+id spinnerGroupsSem
+id spinnerRoleA
 id spinnerStudentsMain
+id spinnerStudentsMonth
+id spinnerStudentsRBT
+id spinnerStudentsSem
 id spline
 id split_action_bar
 id spread
@@ -3151,10 +3156,17 @@ id text
 id text2
 id textEnd
 id textGroupMain
+id textGroupMonth
+id textGroupRBT
+id textGroupSem
+id textRoleA
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textStudentMain
+id textStudentMonth
+id textStudentRBT
+id textStudentSem
 id textTop
 id text_input_end_icon
 id text_input_error_icon
@@ -3609,6 +3621,7 @@ string text_patTea
 string text_prom
 string text_rec_book
 string text_role
+string text_role_user
 string text_score
 string text_sem
 string text_semestr

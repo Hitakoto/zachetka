@@ -3,6 +3,8 @@
     <string name="title_sign_in">Вход</string>
     <string name="hint_login">Логин</string>
     <string name="hint_password">Пароль</string>
+    <string name="hint_group">Логин</string>
+    <string name="hint_course">Логин</string>
     <string name="button_sign_text">Войти</string>
     <string name="forgot"><u>Забыли пароль?</u></string>
     <string name="title_activity_main">StudentMainActivity</string>
@@ -71,5 +73,6 @@
 
     <string name="text_stud">ФИО студента</string>
     <string name="text_group">Группа</string>
+    <string name="text_role_user">Роль</string>
     <string name="text_course">Курс</string>
 </resources>

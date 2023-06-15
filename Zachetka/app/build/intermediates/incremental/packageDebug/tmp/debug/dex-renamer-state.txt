@@ -1,4 +1,4 @@
-#Tue Jun 13 15:04:38 KRAT 2023
+#Thu Jun 15 15:41:04 KRAT 2023
 base.0=/Users/2isp19/Desktop/zachetka/Zachetka/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

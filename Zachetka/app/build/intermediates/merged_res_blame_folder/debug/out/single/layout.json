@@ -28,6 +28,10 @@
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/fragment_home_teacher.xml"
     },
     {
+        "merged": "com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_home_admin.xml",
+        "source": "com.example.zachetka.app-main-46:/layout/fragment_home_admin.xml"
+    },
+    {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/nav_header_admin_main.xml",
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/nav_header_admin_main.xml"
     },
@@ -46,10 +50,6 @@
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/nav_header_teacher_main.xml",
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/layout/nav_header_teacher_main.xml"
-    },
-    {
-        "merged": "com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_home_teacher.xml",
-        "source": "com.example.zachetka.app-main-46:/layout/fragment_home_teacher.xml"
     },
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-mergeDebugResources-43:/layout/fragment_settings_student.xml",

@@ -24,31 +24,12 @@
         android:textStyle="bold"
         tools:ignore="SpUsage,TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/editSearch"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nameRecBook"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/design_text_fiend"
-        android:ems="10"
-        android:hint="@string/hint_search"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:fontFamily="@font/rubik"
-        android:digits="1234567890"
-        android:textColorHint="@color/button_color"
-        android:textColor="@color/button_color"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
-
     <RelativeLayout
         android:id="@+id/relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnEditMode"
-        android:layout_below="@+id/editSearch"
+        android:layout_below="@+id/nameRecBook"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="15dp"
@@ -66,11 +47,34 @@
             android:textColor="@color/button_color"
             android:textSize="20dp" />
 
+        <TextView
+            android:id="@+id/textRoleA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleUsers"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/button_color"
+            android:textSize="14dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/text_role_user"/>
+
+        <Spinner
+            android:id="@+id/spinnerRoleA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleUsers"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"/>
+
         <ScrollView
             android:id="@+id/scrollViewU"
             android:layout_width="match_parent"
             android:layout_height="419dp"
-            android:layout_below="@+id/titleUsers"
+            android:layout_below="@+id/textRoleA"
             android:layout_marginTop="30dp"
             tools:ignore="SpeakableTextPresentCheck">
 

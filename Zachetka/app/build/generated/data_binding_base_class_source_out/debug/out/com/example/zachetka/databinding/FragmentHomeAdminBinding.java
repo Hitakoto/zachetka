@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -26,9 +26,6 @@ public final class FragmentHomeAdminBinding implements ViewBinding {
 
   @NonNull
   public final Button btnEditMode;
-
-  @NonNull
-  public final EditText editSearch;
 
   @NonNull
   public final LinearLayout linearUsers;
@@ -49,25 +46,32 @@ public final class FragmentHomeAdminBinding implements ViewBinding {
   public final ScrollView scrollViewU;
 
   @NonNull
+  public final Spinner spinnerRoleA;
+
+  @NonNull
+  public final TextView textRoleA;
+
+  @NonNull
   public final TextView titleUsers;
 
   @NonNull
   public final TableLayout users;
 
   private FragmentHomeAdminBinding(@NonNull RelativeLayout rootView, @NonNull Button btnEditMode,
-      @NonNull EditText editSearch, @NonNull LinearLayout linearUsers,
-      @NonNull TextView nameRecBook, @NonNull TextView nameRole, @NonNull TextView nameUsers,
-      @NonNull RelativeLayout relative, @NonNull ScrollView scrollViewU,
+      @NonNull LinearLayout linearUsers, @NonNull TextView nameRecBook, @NonNull TextView nameRole,
+      @NonNull TextView nameUsers, @NonNull RelativeLayout relative,
+      @NonNull ScrollView scrollViewU, @NonNull Spinner spinnerRoleA, @NonNull TextView textRoleA,
       @NonNull TextView titleUsers, @NonNull TableLayout users) {
     this.rootView = rootView;
     this.btnEditMode = btnEditMode;
-    this.editSearch = editSearch;
     this.linearUsers = linearUsers;
     this.nameRecBook = nameRecBook;
     this.nameRole = nameRole;
     this.nameUsers = nameUsers;
     this.relative = relative;
     this.scrollViewU = scrollViewU;
+    this.spinnerRoleA = spinnerRoleA;
+    this.textRoleA = textRoleA;
     this.titleUsers = titleUsers;
     this.users = users;
   }
@@ -102,12 +106,6 @@ public final class FragmentHomeAdminBinding implements ViewBinding {
       id = R.id.btnEditMode;
       Button btnEditMode = ViewBindings.findChildViewById(rootView, id);
       if (btnEditMode == null) {
-        break missingId;
-      }
-
-      id = R.id.editSearch;
-      EditText editSearch = ViewBindings.findChildViewById(rootView, id);
-      if (editSearch == null) {
         break missingId;
       }
 
@@ -147,6 +145,18 @@ public final class FragmentHomeAdminBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerRoleA;
+      Spinner spinnerRoleA = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerRoleA == null) {
+        break missingId;
+      }
+
+      id = R.id.textRoleA;
+      TextView textRoleA = ViewBindings.findChildViewById(rootView, id);
+      if (textRoleA == null) {
+        break missingId;
+      }
+
       id = R.id.titleUsers;
       TextView titleUsers = ViewBindings.findChildViewById(rootView, id);
       if (titleUsers == null) {
@@ -159,8 +169,9 @@ public final class FragmentHomeAdminBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeAdminBinding((RelativeLayout) rootView, btnEditMode, editSearch,
-          linearUsers, nameRecBook, nameRole, nameUsers, relative, scrollViewU, titleUsers, users);
+      return new FragmentHomeAdminBinding((RelativeLayout) rootView, btnEditMode, linearUsers,
+          nameRecBook, nameRole, nameUsers, relative, scrollViewU, spinnerRoleA, textRoleA,
+          titleUsers, users);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

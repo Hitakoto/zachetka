@@ -33,7 +33,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -52,7 +51,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -71,7 +69,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -90,7 +87,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -109,9 +105,46 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/groupE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/design_text_fiend"
+        android:ems="10"
+        android:hint="@string/hint_group"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:fontFamily="@font/rubik"
+        android:textColorHint="@color/button_color"
+        android:textColor="@color/button_color"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/courseE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/design_text_fiend"
+        android:ems="10"
+        android:hint="@string/hint_course"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:fontFamily="@font/rubik"
+        android:textColorHint="@color/button_color"
+        android:textColor="@color/button_color"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+
 
 </RelativeLayout>

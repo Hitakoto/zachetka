@@ -36,13 +36,10 @@ public final class FragmentHomeStudentBinding implements ViewBinding {
   public final LinearLayout linearRatingsS;
 
   @NonNull
-  public final TextView nameLateS;
-
-  @NonNull
   public final TextView nameRecBookS;
 
   @NonNull
-  public final TextView quantityLateS;
+  public final TextView noneInfoS;
 
   @NonNull
   public final TableLayout ratingsS;
@@ -58,18 +55,16 @@ public final class FragmentHomeStudentBinding implements ViewBinding {
 
   private FragmentHomeStudentBinding(@NonNull RelativeLayout rootView,
       @NonNull TextView disciplineS, @NonNull TextView gradeS, @NonNull ImageView ivbRecS,
-      @NonNull LinearLayout linearRatingsS, @NonNull TextView nameLateS,
-      @NonNull TextView nameRecBookS, @NonNull TextView quantityLateS,
-      @NonNull TableLayout ratingsS, @NonNull RelativeLayout relativeS,
+      @NonNull LinearLayout linearRatingsS, @NonNull TextView nameRecBookS,
+      @NonNull TextView noneInfoS, @NonNull TableLayout ratingsS, @NonNull RelativeLayout relativeS,
       @NonNull ScrollView scrollViewS, @NonNull TextView titleGradesS) {
     this.rootView = rootView;
     this.disciplineS = disciplineS;
     this.gradeS = gradeS;
     this.ivbRecS = ivbRecS;
     this.linearRatingsS = linearRatingsS;
-    this.nameLateS = nameLateS;
     this.nameRecBookS = nameRecBookS;
-    this.quantityLateS = quantityLateS;
+    this.noneInfoS = noneInfoS;
     this.ratingsS = ratingsS;
     this.relativeS = relativeS;
     this.scrollViewS = scrollViewS;
@@ -127,21 +122,15 @@ public final class FragmentHomeStudentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.nameLateS;
-      TextView nameLateS = ViewBindings.findChildViewById(rootView, id);
-      if (nameLateS == null) {
-        break missingId;
-      }
-
       id = R.id.nameRecBookS;
       TextView nameRecBookS = ViewBindings.findChildViewById(rootView, id);
       if (nameRecBookS == null) {
         break missingId;
       }
 
-      id = R.id.quantityLateS;
-      TextView quantityLateS = ViewBindings.findChildViewById(rootView, id);
-      if (quantityLateS == null) {
+      id = R.id.noneInfoS;
+      TextView noneInfoS = ViewBindings.findChildViewById(rootView, id);
+      if (noneInfoS == null) {
         break missingId;
       }
 
@@ -170,8 +159,7 @@ public final class FragmentHomeStudentBinding implements ViewBinding {
       }
 
       return new FragmentHomeStudentBinding((RelativeLayout) rootView, disciplineS, gradeS, ivbRecS,
-          linearRatingsS, nameLateS, nameRecBookS, quantityLateS, ratingsS, relativeS, scrollViewS,
-          titleGradesS);
+          linearRatingsS, nameRecBookS, noneInfoS, ratingsS, relativeS, scrollViewS, titleGradesS);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

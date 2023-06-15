@@ -60,12 +60,26 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/textStudentMain"
+            android:id="@+id/textGroupMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/titleUsersT"
-            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/button_color"
+            android:textSize="14dp"
             android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/text_group"/>
+
+        <TextView
+            android:id="@+id/textStudentMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textGroupMain"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/rubik_bold"
             android:gravity="center"
             android:text="@string/text_stud"
@@ -73,43 +87,45 @@
             android:textColor="@color/button_color"
             android:textSize="14dp" />
 
-        <TextView
-            android:id="@+id/textGroupMain"
+        <Spinner
+            android:id="@+id/spinnerGroupsMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textStudentMain"
-            android:fontFamily="@font/rubik_bold"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="@color/button_color"
-            android:textSize="14dp"
+            android:layout_below="@+id/titleUsersT"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:text="@string/text_group"/>
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"/>
 
         <Spinner
             android:id="@+id/spinnerStudentsMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/titleUsersT"
+            android:layout_below="@+id/spinnerGroupsMain"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="30dp" />
 
-        <Spinner
-            android:id="@+id/spinnerGroupsMain"
+        <TextView
+            android:id="@+id/noneInfoT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/spinnerStudentsMain"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:layout_alignParentRight="true"/>
+            android:layout_below="@+id/textStudentMain"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/rubik_bold"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:textColor="@color/button_color"
+            android:textSize="16dp"
+            android:visibility="gone"/>
 
         <ScrollView
             android:id="@+id/scrollViewT"
             android:layout_width="match_parent"
             android:layout_height="419dp"
-            android:layout_below="@+id/textGroupMain"
+            android:layout_below="@+id/textStudentMain"
             android:layout_marginTop="30dp"
             tools:ignore="SpeakableTextPresentCheck">
 

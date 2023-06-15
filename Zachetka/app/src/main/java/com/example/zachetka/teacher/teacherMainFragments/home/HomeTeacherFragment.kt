@@ -20,6 +20,11 @@ import com.example.zachetka.teacher.TeacherRecordActivity
 import java.io.IOException
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import java.time.format.TextStyle
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class HomeTeacherFragment : Fragment() {
@@ -31,6 +36,7 @@ class HomeTeacherFragment : Fragment() {
     lateinit var tableRet: TableLayout
 
     lateinit var titleMonthName: TextView
+    lateinit var noneInfo: TextView
 
     lateinit var spinnerStudentsMain: Spinner
     lateinit var spinnerGroupsMain: Spinner
@@ -44,6 +50,7 @@ class HomeTeacherFragment : Fragment() {
         v = inflater.inflate(R.layout.fragment_home_teacher, container, false)
 
         ivbRecord = v.findViewById(R.id.ivb_recT)
+        noneInfo = v.findViewById(R.id.noneInfoT)
 
         titleMonthName = v.findViewById(R.id.titleUsersT)
 
@@ -76,6 +83,16 @@ class HomeTeacherFragment : Fragment() {
         } catch (mIOException: SQLException) {
             throw mIOException
         }
+
+        val currentDate = LocalDate.now()
+        val month = currentDate.month
+
+        val monthName = month.getDisplayName(TextStyle.FULL_STANDALONE, Locale("ru"))
+        val monthNameInGenitiveCase = monthName.take(monthName.length - 1) + "ь"
+
+        val formatter = DateTimeFormatter.ofPattern("LLLL", Locale("ru"))
+        val capitalizedMonthNameInGenitiveCase = monthNameInGenitiveCase.replaceFirstChar { it.uppercase() }
+        val formattedMonthName = capitalizedMonthNameInGenitiveCase.format(formatter)
 
         val cursorUsers1: Cursor = database.rawQuery("SELECT surname, firstname, patronymic FROM Users, Students WHERE Users.idUser = Students.idUser ORDER BY surname", null)
         val users1 = ArrayList<String>()
@@ -167,8 +184,10 @@ class HomeTeacherFragment : Fragment() {
                 studentName = spinnerStudentsMain.selectedItem.toString()
                 groupsName = spinnerGroupsMain.selectedItem.toString()
 
-                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) + "' ORDER BY Discipline.nameDis", null)
+                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) + "' AND MonthAttestation.month = '$formattedMonthName' ORDER BY Discipline.nameDis", null)
                 if (cursor.moveToFirst()) {
+                    tableRet.visibility = View.VISIBLE
+                    noneInfo.visibility = View.GONE
                     do {
                         val row = TableRow(activity!!)
                         val textDis = TextView(activity!!)
@@ -191,7 +210,12 @@ class HomeTeacherFragment : Fragment() {
                         row.addView(textGrade, layoutParams)
                         tableRet.addView(row)
                     } while (cursor.moveToNext())
-                } else Log.d("mLog", "0 rows")
+                } else {
+                    titleMonthName.text = "Аттестация за $formattedMonthName"
+                    tableRet.visibility = View.GONE
+                    noneInfo.visibility = View.VISIBLE
+                    noneInfo.text = "Нет данных по аттестации"
+                }
                 cursor.close()
             }
 
@@ -237,6 +261,17 @@ class HomeTeacherFragment : Fragment() {
                     disciplineT.setTypeface(null, Typeface.BOLD)
                     //disciplineT.typeface = customTypeface
 
+                    val monthT = TextView(activity!!)
+                    monthT.text = "Месяц"
+                    monthT.setTextColor(Color.rgb(24, 79, 154))
+                    monthT.gravity = Gravity.CENTER
+                    monthT.textAlignment = View.TEXT_ALIGNMENT_CENTER
+                    monthT.textSize = 16f
+                    monthT.setPadding(3,3,3,3,)
+                    monthT.setTypeface(null, Typeface.BOLD)
+                    //disciplineT.typeface = customTypeface
+
+
                     val gradeT = TextView(activity!!)
                     gradeT.text = "Оценка"
                     gradeT.setTextColor(Color.rgb(24, 79, 154))
@@ -254,8 +289,10 @@ class HomeTeacherFragment : Fragment() {
                     selectedAttribute = selectedItem
                 }
 
-                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) +"' ORDER BY Discipline.nameDis", null)
+                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) +"' AND MonthAttestation.month = '$formattedMonthName' ORDER BY Discipline.nameDis", null)
                 if (cursor.moveToFirst()) {
+                    tableRet.visibility = View.VISIBLE
+                    noneInfo.visibility = View.GONE
                     do {
                         val row = TableRow(activity!!)
                         val textDis = TextView(activity!!)
@@ -278,7 +315,12 @@ class HomeTeacherFragment : Fragment() {
                         row.addView(textGrade, layoutParams)
                         tableRet.addView(row)
                     } while (cursor.moveToNext())
-                } else Log.d("mLog", "0 rows")
+                } else {
+                    titleMonthName.text = "Аттестация за $formattedMonthName"
+                    tableRet.visibility = View.GONE
+                    noneInfo.visibility = View.VISIBLE
+                    noneInfo.text = "Нет данных по аттестации"
+                }
                 cursor.close()
             }
 

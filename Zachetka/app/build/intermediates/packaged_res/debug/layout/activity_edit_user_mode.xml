@@ -33,7 +33,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -52,7 +51,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -71,7 +69,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -90,7 +87,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
@@ -109,7 +105,6 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:fontFamily="@font/rubik"
-        android:digits="1234567890"
         android:textColorHint="@color/button_color"
         android:textColor="@color/button_color"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />

@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -46,11 +47,25 @@ public final class FragmentMonthTeacherBinding implements ViewBinding {
   @NonNull
   public final ScrollView scrollViewMT;
 
+  @NonNull
+  public final Spinner spinnerGroupsMonth;
+
+  @NonNull
+  public final Spinner spinnerStudentsMonth;
+
+  @NonNull
+  public final TextView textGroupMonth;
+
+  @NonNull
+  public final TextView textStudentMonth;
+
   private FragmentMonthTeacherBinding(@NonNull RelativeLayout rootView,
       @NonNull LinearLayout linearRatingsMT, @NonNull TextView nameDisciplineMT,
       @NonNull TextView nameGradeT, @NonNull TextView nameMarkMT, @NonNull TextView nameMonthMT,
       @NonNull TableLayout ratingsMT, @NonNull RelativeLayout relativePersonT,
-      @NonNull ScrollView scrollViewMT) {
+      @NonNull ScrollView scrollViewMT, @NonNull Spinner spinnerGroupsMonth,
+      @NonNull Spinner spinnerStudentsMonth, @NonNull TextView textGroupMonth,
+      @NonNull TextView textStudentMonth) {
     this.rootView = rootView;
     this.linearRatingsMT = linearRatingsMT;
     this.nameDisciplineMT = nameDisciplineMT;
@@ -60,6 +75,10 @@ public final class FragmentMonthTeacherBinding implements ViewBinding {
     this.ratingsMT = ratingsMT;
     this.relativePersonT = relativePersonT;
     this.scrollViewMT = scrollViewMT;
+    this.spinnerGroupsMonth = spinnerGroupsMonth;
+    this.spinnerStudentsMonth = spinnerStudentsMonth;
+    this.textGroupMonth = textGroupMonth;
+    this.textStudentMonth = textStudentMonth;
   }
 
   @Override
@@ -137,9 +156,33 @@ public final class FragmentMonthTeacherBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerGroupsMonth;
+      Spinner spinnerGroupsMonth = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerGroupsMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerStudentsMonth;
+      Spinner spinnerStudentsMonth = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerStudentsMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.textGroupMonth;
+      TextView textGroupMonth = ViewBindings.findChildViewById(rootView, id);
+      if (textGroupMonth == null) {
+        break missingId;
+      }
+
+      id = R.id.textStudentMonth;
+      TextView textStudentMonth = ViewBindings.findChildViewById(rootView, id);
+      if (textStudentMonth == null) {
+        break missingId;
+      }
+
       return new FragmentMonthTeacherBinding((RelativeLayout) rootView, linearRatingsMT,
           nameDisciplineMT, nameGradeT, nameMarkMT, nameMonthMT, ratingsMT, relativePersonT,
-          scrollViewMT);
+          scrollViewMT, spinnerGroupsMonth, spinnerStudentsMonth, textGroupMonth, textStudentMonth);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
