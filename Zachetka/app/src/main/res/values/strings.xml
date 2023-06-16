@@ -2,10 +2,14 @@
     <string name="app_name">Zачётка!</string>
     <string name="title_sign_in">Вход</string>
     <string name="hint_login">Логин</string>
+    <string name="hint_surname">Фамилия</string>
+    <string name="hint_name">Имя</string>
+    <string name="hint_patronymic">Отчество</string>
     <string name="hint_password">Пароль</string>
     <string name="hint_group">Логин</string>
     <string name="hint_course">Логин</string>
     <string name="button_sign_text">Войти</string>
+    <string name="button_save">Сохранить изменения</string>
     <string name="forgot"><u>Забыли пароль?</u></string>
     <string name="title_activity_main">StudentMainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

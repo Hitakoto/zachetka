@@ -41,10 +41,16 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
   public final LinearLayout linearRatingsT;
 
   @NonNull
+  public final TextView nameLateT;
+
+  @NonNull
   public final TextView nameRecBookT;
 
   @NonNull
   public final TextView noneInfoT;
+
+  @NonNull
+  public final TextView quantityLateT;
 
   @NonNull
   public final TableLayout ratingsT;
@@ -72,20 +78,22 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
 
   private FragmentHomeTeacherBinding(@NonNull RelativeLayout rootView,
       @NonNull TableRow attributesMain, @NonNull TextView disciplineT, @NonNull TextView gradeT,
-      @NonNull ImageView ivbRecT, @NonNull LinearLayout linearRatingsT,
-      @NonNull TextView nameRecBookT, @NonNull TextView noneInfoT, @NonNull TableLayout ratingsT,
-      @NonNull RelativeLayout relativeT, @NonNull ScrollView scrollViewT,
-      @NonNull Spinner spinnerGroupsMain, @NonNull Spinner spinnerStudentsMain,
-      @NonNull TextView textGroupMain, @NonNull TextView textStudentMain,
-      @NonNull TextView titleUsersT) {
+      @NonNull ImageView ivbRecT, @NonNull LinearLayout linearRatingsT, @NonNull TextView nameLateT,
+      @NonNull TextView nameRecBookT, @NonNull TextView noneInfoT, @NonNull TextView quantityLateT,
+      @NonNull TableLayout ratingsT, @NonNull RelativeLayout relativeT,
+      @NonNull ScrollView scrollViewT, @NonNull Spinner spinnerGroupsMain,
+      @NonNull Spinner spinnerStudentsMain, @NonNull TextView textGroupMain,
+      @NonNull TextView textStudentMain, @NonNull TextView titleUsersT) {
     this.rootView = rootView;
     this.attributesMain = attributesMain;
     this.disciplineT = disciplineT;
     this.gradeT = gradeT;
     this.ivbRecT = ivbRecT;
     this.linearRatingsT = linearRatingsT;
+    this.nameLateT = nameLateT;
     this.nameRecBookT = nameRecBookT;
     this.noneInfoT = noneInfoT;
+    this.quantityLateT = quantityLateT;
     this.ratingsT = ratingsT;
     this.relativeT = relativeT;
     this.scrollViewT = scrollViewT;
@@ -153,6 +161,12 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.nameLateT;
+      TextView nameLateT = ViewBindings.findChildViewById(rootView, id);
+      if (nameLateT == null) {
+        break missingId;
+      }
+
       id = R.id.nameRecBookT;
       TextView nameRecBookT = ViewBindings.findChildViewById(rootView, id);
       if (nameRecBookT == null) {
@@ -162,6 +176,12 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
       id = R.id.noneInfoT;
       TextView noneInfoT = ViewBindings.findChildViewById(rootView, id);
       if (noneInfoT == null) {
+        break missingId;
+      }
+
+      id = R.id.quantityLateT;
+      TextView quantityLateT = ViewBindings.findChildViewById(rootView, id);
+      if (quantityLateT == null) {
         break missingId;
       }
 
@@ -214,9 +234,9 @@ public final class FragmentHomeTeacherBinding implements ViewBinding {
       }
 
       return new FragmentHomeTeacherBinding((RelativeLayout) rootView, attributesMain, disciplineT,
-          gradeT, ivbRecT, linearRatingsT, nameRecBookT, noneInfoT, ratingsT, relativeT,
-          scrollViewT, spinnerGroupsMain, spinnerStudentsMain, textGroupMain, textStudentMain,
-          titleUsersT);
+          gradeT, ivbRecT, linearRatingsT, nameLateT, nameRecBookT, noneInfoT, quantityLateT,
+          ratingsT, relativeT, scrollViewT, spinnerGroupsMain, spinnerStudentsMain, textGroupMain,
+          textStudentMain, titleUsersT);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

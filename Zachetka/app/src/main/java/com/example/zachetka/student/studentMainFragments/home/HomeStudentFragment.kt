@@ -33,6 +33,7 @@ class HomeStudentFragment : Fragment() {
     lateinit var tableRet: TableLayout
 
     private lateinit var titleMonthName: TextView
+    private lateinit var late: TextView
     lateinit var noneInfo: TextView
 
     private lateinit var dbHelper: DBHelper
@@ -45,6 +46,7 @@ class HomeStudentFragment : Fragment() {
         ivbRecord = v.findViewById(R.id.ivb_recS)
 
         titleMonthName = v.findViewById(R.id.titleGradesS)
+        late = v.findViewById(R.id.quantityLate)
         noneInfo = v.findViewById(R.id.noneInfoS)
 
         val id : String? = activity?.intent?.getStringExtra("idUser")
@@ -85,7 +87,7 @@ class HomeStudentFragment : Fragment() {
         val capitalizedMonthNameInGenitiveCase = monthNameInGenitiveCase.replaceFirstChar { it.uppercase() }
         val formattedMonthName = capitalizedMonthNameInGenitiveCase.format(formatter)
 
-        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = $id AND MonthAttestation.month = '$formattedMonthName'", null)
+        val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month, MonthAttestation.colLateHY, MonthAttestation.colLateHN FROM MonthAttestation, Discipline, Students WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = $id AND MonthAttestation.month = '$formattedMonthName'", null)
         if (cursor.moveToFirst()) {
             do {
                 val row = TableRow(activity!!)
@@ -101,7 +103,14 @@ class HomeStudentFragment : Fragment() {
                 textGrade.gravity = Gravity.CENTER
                 textGrade.textAlignment = View.TEXT_ALIGNMENT_CENTER
 
+                var lateY = 0
+                lateY += cursor.getInt(3)
+
+                var lateNY = 0
+                lateNY += cursor.getInt(4)
+
                 titleMonthName.text = "Аттестация за $formattedMonthName"
+                late.text = "ув: $lateY, неув: $lateNY"
 
                 row.addView(textDis, layoutParams)
                 row.addView(textGrade, layoutParams)

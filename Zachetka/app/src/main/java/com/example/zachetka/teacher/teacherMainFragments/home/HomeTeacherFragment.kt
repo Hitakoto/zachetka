@@ -36,6 +36,7 @@ class HomeTeacherFragment : Fragment() {
     lateinit var tableRet: TableLayout
 
     lateinit var titleMonthName: TextView
+    private lateinit var late: TextView
     lateinit var noneInfo: TextView
 
     lateinit var spinnerStudentsMain: Spinner
@@ -53,6 +54,7 @@ class HomeTeacherFragment : Fragment() {
         noneInfo = v.findViewById(R.id.noneInfoT)
 
         titleMonthName = v.findViewById(R.id.titleUsersT)
+        late = v.findViewById(R.id.quantityLateT)
 
         spinnerStudentsMain = v.findViewById(R.id.spinnerStudentsMain)
         spinnerGroupsMain = v.findViewById(R.id.spinnerGroupsMain)
@@ -184,7 +186,7 @@ class HomeTeacherFragment : Fragment() {
                 studentName = spinnerStudentsMain.selectedItem.toString()
                 groupsName = spinnerGroupsMain.selectedItem.toString()
 
-                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) + "' AND MonthAttestation.month = '$formattedMonthName' ORDER BY Discipline.nameDis", null)
+                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month, MonthAttestation.colLateHY, MonthAttestation.colLateHN FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) + "' AND MonthAttestation.month = '$formattedMonthName' ORDER BY Discipline.nameDis", null)
                 if (cursor.moveToFirst()) {
                     tableRet.visibility = View.VISIBLE
                     noneInfo.visibility = View.GONE
@@ -205,6 +207,13 @@ class HomeTeacherFragment : Fragment() {
                         var titleMonth: String = cursor.getString(2).toString() + " "
 
                         titleMonthName.text = "Аттестация за $titleMonth"
+
+                        var lateY = 0
+                        lateY += cursor.getInt(3)
+
+                        var lateNY = 0
+                        lateNY += cursor.getInt(4)
+                        late.text = "ув: $lateY, неув: $lateNY"
 
                         row.addView(textDis, layoutParams)
                         row.addView(textGrade, layoutParams)
@@ -289,7 +298,7 @@ class HomeTeacherFragment : Fragment() {
                     selectedAttribute = selectedItem
                 }
 
-                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) +"' AND MonthAttestation.month = '$formattedMonthName' ORDER BY Discipline.nameDis", null)
+                val cursor = database.rawQuery("SELECT Discipline.nameDis, MonthAttestation.grade, MonthAttestation.month, MonthAttestation.colLateHY, MonthAttestation.colLateHN FROM MonthAttestation, Discipline, Students, Users, Groups WHERE MonthAttestation.idDiscipline = Discipline.idDiscipline AND Students.idStudent = MonthAttestation.idStudent AND Students.idUser = Users.idUser AND Users.surname = '" + studentName.substring(0, studentName.length - 5) + "' AND Groups.idGroup = Students.idGroup AND Groups.title = '"+ groupsName.substring(0, groupsName.length - 1) +"' AND MonthAttestation.month = '$formattedMonthName' ORDER BY Discipline.nameDis", null)
                 if (cursor.moveToFirst()) {
                     tableRet.visibility = View.VISIBLE
                     noneInfo.visibility = View.GONE
@@ -310,6 +319,13 @@ class HomeTeacherFragment : Fragment() {
                         var titleMonth: String = cursor.getString(2).toString() + " "
 
                         titleMonthName.text = "Аттестация за $titleMonth"
+
+                        var lateY = 0
+                        lateY += cursor.getInt(3)
+
+                        var lateNY = 0
+                        lateNY += cursor.getInt(4)
+                        late.text = "ув: $lateY, неув: $lateNY"
 
                         row.addView(textDis, layoutParams)
                         row.addView(textGrade, layoutParams)

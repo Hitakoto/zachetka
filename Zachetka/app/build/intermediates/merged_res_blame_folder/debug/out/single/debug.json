@@ -152,6 +152,10 @@
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-pngs-39:/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
+        "merged": "com.example.zachetka.app-merged_res-44:/layout_fragment_home_teacher.xml.flat",
+        "source": "com.example.zachetka.app-main-46:/layout/fragment_home_teacher.xml"
+    },
+    {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-merged_res-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -336,10 +340,6 @@
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-pngs-39:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.zachetka.app-merged_res-44:/layout_fragment_home_admin.xml.flat",
-        "source": "com.example.zachetka.app-main-46:/layout/fragment_home_admin.xml"
-    },
-    {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-merged_res-44:/navigation_mobile_navigation_teacher.xml.flat",
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-main-46:/navigation/mobile_navigation_teacher.xml"
     },
@@ -362,6 +362,10 @@
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-merged_res-44:/drawable-mdpi_ic_semestr.png.flat",
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-pngs-39:/drawable-mdpi/ic_semestr.png"
+    },
+    {
+        "merged": "com.example.zachetka.app-merged_res-44:/layout_activity_edit_user_mode.xml.flat",
+        "source": "com.example.zachetka.app-main-46:/layout/activity_edit_user_mode.xml"
     },
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -422,6 +426,10 @@
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-merged_res-44:/drawable-ldpi_nav_mark.png.flat",
         "source": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-pngs-39:/drawable-ldpi/nav_mark.png"
+    },
+    {
+        "merged": "com.example.zachetka.app-merged_res-44:/layout_fragment_home_student.xml.flat",
+        "source": "com.example.zachetka.app-main-46:/layout/fragment_home_student.xml"
     },
     {
         "merged": "/Users/2isp19/.gradle/daemon/7.4/com.example.zachetka.app-merged_res-44:/layout_app_bar_admin_main.xml.flat",

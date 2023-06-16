@@ -2707,6 +2707,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnEditMode
+id btn_edit
 id btn_sign_in
 id buttonPanel
 id cache_measures
@@ -2946,6 +2947,7 @@ id nameDisciplineST
 id nameE
 id nameGradeS
 id nameGradeT
+id nameLate
 id nameLateT
 id nameMarkMS
 id nameMarkMT
@@ -3024,6 +3026,8 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id quantityLate
+id quantityLateT
 id radio
 id ratingsMS
 id ratingsMT
@@ -3101,15 +3105,19 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerEditMode
+id spinnerGroupUser
 id spinnerGroupsMain
 id spinnerGroupsMonth
 id spinnerGroupsRBT
 id spinnerGroupsSem
 id spinnerRoleA
+id spinnerRoleUser
 id spinnerStudentsMain
 id spinnerStudentsMonth
 id spinnerStudentsRBT
 id spinnerStudentsSem
+id spinnerUser
 id spline
 id split_action_bar
 id spread
@@ -3488,6 +3496,7 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string button_save
 string button_sign_text
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -3500,9 +3509,14 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string forgot
 string hide_bottom_view_on_scroll_behavior
+string hint_course
+string hint_group
 string hint_login
+string hint_name
 string hint_password
+string hint_patronymic
 string hint_search
+string hint_surname
 string icon_content_description
 string item_view_role_description
 string label
