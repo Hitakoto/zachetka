@@ -4,7 +4,7 @@
             "outputFile": "com.example.zachetka.app-mergeDebugResources-42:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/Users/2isp19/.gradle/caches/transforms-3/1e5640198cf8ff6ed0fc8f4876108987/transformed/appcompat-1.5.1/res/values-v26/values-v26.xml",
+                    "source": "C:\\Users\\Microsoft\\.gradle\\caches\\transforms-3\\1e5640198cf8ff6ed0fc8f4876108987\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

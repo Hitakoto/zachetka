@@ -60,7 +60,7 @@ class SignInActivity : AppCompatActivity() {
 
         btnSignIn.setOnClickListener(View.OnClickListener { _ ->
             if (loginText.text.toString() == "" || passwordText.text.toString() == "") {
-                Toast.makeText(this, "Не введены логин или пароль", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Обнаружены пустые поля", Toast.LENGTH_LONG).show()
             } else {
                 val sql = "SELECT idUser login, password, role FROM Users WHERE login = '" + loginText.text.toString() + "' AND password = '" + passwordText.text.toString() + "'"
                 val cursor: Cursor = database.rawQuery(sql, null)

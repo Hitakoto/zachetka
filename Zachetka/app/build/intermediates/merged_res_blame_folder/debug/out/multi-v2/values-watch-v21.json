@@ -4,7 +4,7 @@
             "outputFile": "com.example.zachetka.app-mergeDebugResources-42:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "/Users/2isp19/.gradle/caches/transforms-3/1e5640198cf8ff6ed0fc8f4876108987/transformed/appcompat-1.5.1/res/values-watch-v21/values-watch-v21.xml",
+                    "source": "C:\\Users\\Microsoft\\.gradle\\caches\\transforms-3\\1e5640198cf8ff6ed0fc8f4876108987\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

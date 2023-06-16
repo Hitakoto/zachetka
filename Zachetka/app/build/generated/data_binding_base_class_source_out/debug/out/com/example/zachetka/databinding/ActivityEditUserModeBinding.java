@@ -5,9 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RelativeLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,55 +21,24 @@ public final class ActivityEditUserModeBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button btnAdd;
+
+  @NonNull
+  public final Button btnDelete;
+
+  @NonNull
   public final Button btnEdit;
 
   @NonNull
   public final TextView editModeText;
 
-  @NonNull
-  public final EditText loginE;
-
-  @NonNull
-  public final EditText nameE;
-
-  @NonNull
-  public final EditText passwordE;
-
-  @NonNull
-  public final EditText patronymicE;
-
-  @NonNull
-  public final Spinner spinnerEditMode;
-
-  @NonNull
-  public final Spinner spinnerGroupUser;
-
-  @NonNull
-  public final Spinner spinnerRoleUser;
-
-  @NonNull
-  public final Spinner spinnerUser;
-
-  @NonNull
-  public final EditText surnameE;
-
-  private ActivityEditUserModeBinding(@NonNull RelativeLayout rootView, @NonNull Button btnEdit,
-      @NonNull TextView editModeText, @NonNull EditText loginE, @NonNull EditText nameE,
-      @NonNull EditText passwordE, @NonNull EditText patronymicE, @NonNull Spinner spinnerEditMode,
-      @NonNull Spinner spinnerGroupUser, @NonNull Spinner spinnerRoleUser,
-      @NonNull Spinner spinnerUser, @NonNull EditText surnameE) {
+  private ActivityEditUserModeBinding(@NonNull RelativeLayout rootView, @NonNull Button btnAdd,
+      @NonNull Button btnDelete, @NonNull Button btnEdit, @NonNull TextView editModeText) {
     this.rootView = rootView;
+    this.btnAdd = btnAdd;
+    this.btnDelete = btnDelete;
     this.btnEdit = btnEdit;
     this.editModeText = editModeText;
-    this.loginE = loginE;
-    this.nameE = nameE;
-    this.passwordE = passwordE;
-    this.patronymicE = patronymicE;
-    this.spinnerEditMode = spinnerEditMode;
-    this.spinnerGroupUser = spinnerGroupUser;
-    this.spinnerRoleUser = spinnerRoleUser;
-    this.spinnerUser = spinnerUser;
-    this.surnameE = surnameE;
   }
 
   @Override
@@ -101,6 +68,18 @@ public final class ActivityEditUserModeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_add;
+      Button btnAdd = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_delete;
+      Button btnDelete = ViewBindings.findChildViewById(rootView, id);
+      if (btnDelete == null) {
+        break missingId;
+      }
+
       id = R.id.btn_edit;
       Button btnEdit = ViewBindings.findChildViewById(rootView, id);
       if (btnEdit == null) {
@@ -113,63 +92,8 @@ public final class ActivityEditUserModeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.loginE;
-      EditText loginE = ViewBindings.findChildViewById(rootView, id);
-      if (loginE == null) {
-        break missingId;
-      }
-
-      id = R.id.nameE;
-      EditText nameE = ViewBindings.findChildViewById(rootView, id);
-      if (nameE == null) {
-        break missingId;
-      }
-
-      id = R.id.passwordE;
-      EditText passwordE = ViewBindings.findChildViewById(rootView, id);
-      if (passwordE == null) {
-        break missingId;
-      }
-
-      id = R.id.patronymicE;
-      EditText patronymicE = ViewBindings.findChildViewById(rootView, id);
-      if (patronymicE == null) {
-        break missingId;
-      }
-
-      id = R.id.spinnerEditMode;
-      Spinner spinnerEditMode = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerEditMode == null) {
-        break missingId;
-      }
-
-      id = R.id.spinnerGroupUser;
-      Spinner spinnerGroupUser = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerGroupUser == null) {
-        break missingId;
-      }
-
-      id = R.id.spinnerRoleUser;
-      Spinner spinnerRoleUser = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerRoleUser == null) {
-        break missingId;
-      }
-
-      id = R.id.spinnerUser;
-      Spinner spinnerUser = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerUser == null) {
-        break missingId;
-      }
-
-      id = R.id.surnameE;
-      EditText surnameE = ViewBindings.findChildViewById(rootView, id);
-      if (surnameE == null) {
-        break missingId;
-      }
-
-      return new ActivityEditUserModeBinding((RelativeLayout) rootView, btnEdit, editModeText,
-          loginE, nameE, passwordE, patronymicE, spinnerEditMode, spinnerGroupUser, spinnerRoleUser,
-          spinnerUser, surnameE);
+      return new ActivityEditUserModeBinding((RelativeLayout) rootView, btnAdd, btnDelete, btnEdit,
+          editModeText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

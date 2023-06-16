@@ -112,19 +112,19 @@ class HomeTeacherFragment : Fragment() {
         spinnerStudentsMain.adapter = adapterUsers1
         cursorUsers1.close()
 
-        val cursorGroups1: Cursor = database.rawQuery("SELECT title FROM Groups ORDER BY title", null)
-        val groups1 = ArrayList<String>()
-        if (cursorGroups1.moveToFirst()) {
+        val cursorGroups: Cursor = database.rawQuery("SELECT title FROM Groups ORDER BY title", null)
+        val groups = ArrayList<String>()
+        if (cursorGroups.moveToFirst()) {
             do {
-                groups1.add(
-                    java.lang.String.valueOf(cursorGroups1.getString(0)).toString() + " "
+                groups.add(
+                    java.lang.String.valueOf(cursorGroups.getString(0)).toString() + " "
                 )
-            } while (cursorGroups1.moveToNext())
+            } while (cursorGroups.moveToNext())
         } else Log.d("mLog", "0 rows")
-        val adapterGroups1: ArrayAdapter<String> = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_item, groups1)
-        adapterGroups1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinnerGroupsMain.adapter = adapterGroups1
-        cursorGroups1.close()
+        val adapterGroups: ArrayAdapter<String> = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_item, groups)
+        adapterGroups.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerGroupsMain.adapter = adapterGroups
+        cursorGroups.close()
 
         var studentName: String = spinnerStudentsMain.selectedItem.toString()
         var groupsName: String = spinnerGroupsMain.selectedItem.toString()

@@ -1,11 +1,11 @@
 [
   {
-    "name": "mobile_navigation_student",
+    "name": "mobile_navigation_admin",
     "navigationXmlIds": [],
     "deepLinks": []
   },
   {
-    "name": "mobile_navigation_admin",
+    "name": "mobile_navigation_student",
     "navigationXmlIds": [],
     "deepLinks": []
   },

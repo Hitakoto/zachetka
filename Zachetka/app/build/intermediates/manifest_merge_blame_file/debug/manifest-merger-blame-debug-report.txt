@@ -6,205 +6,244 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml
+8-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml
+9-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml
 10
 11    <permission
-11-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.9.0] C:\Users\Microsoft\.gradle\caches\transforms-3\17ad8482735f67672b7a75a68816510d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 12        android:name="com.example.markpgt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.9.0] C:\Users\Microsoft\.gradle\caches\transforms-3\17ad8482735f67672b7a75a68816510d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.9.0] C:\Users\Microsoft\.gradle\caches\transforms-3\17ad8482735f67672b7a75a68816510d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.example.markpgt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.9.0] C:\Users\Microsoft\.gradle\caches\transforms-3\17ad8482735f67672b7a75a68816510d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] C:\Users\Microsoft\.gradle\caches\transforms-3\17ad8482735f67672b7a75a68816510d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:6:5-84:19
+17-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:6:5-105:19
 18        android:allowBackup="true"
-18-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:7:9-35
+18-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:7:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.9.0] /Users/2isp19/.gradle/caches/transforms-3/17ad8482735f67672b7a75a68816510d/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.9.0] C:\Users\Microsoft\.gradle\caches\transforms-3\17ad8482735f67672b7a75a68816510d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:8:9-65
+20-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:8:9-65
 21        android:debuggable="true"
 22        android:fullBackupContent="@xml/backup_rules"
-22-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:9:9-54
+22-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:9:9-54
 23        android:icon="@drawable/icon"
-23-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:10:9-38
+23-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:10:9-38
 24        android:label="@string/app_name"
-24-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:11:9-41
+24-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:11:9-41
 25        android:roundIcon="@drawable/icon"
-25-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:12:9-43
+25-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:12:9-43
 26        android:supportsRtl="true"
-26-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:13:9-35
+26-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:13:9-35
 27        android:testOnly="true"
 28        android:theme="@style/Theme.MarkPGT" >
-28-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:14:9-45
+28-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:14:9-45
 29        <activity
-29-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:16:9-22:20
-30            android:name="com.example.zachetka.admin.EditUserModeActivity"
-30-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:17:13-55
+29-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:16:9-22:20
+30            android:name="com.example.zachetka.admin.DeleteUserActivity"
+30-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:17:13-53
 31            android:exported="false" >
-31-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:18:13-37
+31-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:18:13-37
 32            <meta-data
-32-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:19:13-21:36
+32-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
 33                android:name="android.app.lib_name"
-33-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:20:17-52
+33-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
 34                android:value="" />
-34-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:21:17-33
+34-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
 35        </activity>
 36        <activity
-36-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:23:9-31:20
-37            android:name="com.example.zachetka.teacher.TeacherMainActivity"
-37-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:24:13-56
-38            android:exported="false"
-38-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:25:13-37
-39            android:label="@string/title_activity_teacher_main"
-39-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:26:13-64
-40            android:theme="@style/Theme.MarkPGT.NoActionBar" >
-40-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:27:13-61
-41            <meta-data
-41-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:19:13-21:36
-42                android:name="android.app.lib_name"
-42-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:20:17-52
-43                android:value="" />
-43-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:21:17-33
-44        </activity>
-45        <activity
-45-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:32:9-39:20
-46            android:name="com.example.zachetka.teacher.TeacherRecordActivity"
-46-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:33:13-58
-47            android:exported="false"
-47-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:34:13-37
-48            android:screenOrientation="landscape" >
-48-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:35:13-50
-49            <meta-data
-49-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:19:13-21:36
-50                android:name="android.app.lib_name"
-50-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:20:17-52
-51                android:value="" />
-51-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:21:17-33
-52        </activity>
-53        <activity
-53-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:40:9-46:20
-54            android:name="com.example.zachetka.admin.AdminMainActivity"
-54-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:41:13-52
-55            android:exported="false" >
-55-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:42:13-37
-56            <meta-data
-56-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:19:13-21:36
-57                android:name="android.app.lib_name"
-57-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:20:17-52
-58                android:value="" />
-58-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:21:17-33
-59        </activity>
-60        <activity
-60-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:47:9-54:20
-61            android:name="com.example.zachetka.student.StudentRecordActivity"
-61-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:48:13-58
-62            android:exported="false"
-62-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:49:13-37
-63            android:screenOrientation="landscape" >
-63-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:50:13-50
-64            <meta-data
-64-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:19:13-21:36
-65                android:name="android.app.lib_name"
-65-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:20:17-52
-66                android:value="" />
-66-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:21:17-33
-67        </activity>
-68        <activity
-68-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:55:9-63:20
-69            android:name="com.example.zachetka.student.StudentMainActivity"
-69-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:56:13-56
-70            android:exported="false"
-70-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:57:13-37
-71            android:label="@string/title_activity_main"
-71-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:58:13-56
-72            android:theme="@style/Theme.MarkPGT.NoActionBar" >
-72-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:59:13-61
-73            <meta-data
-73-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:19:13-21:36
-74                android:name="android.app.lib_name"
-74-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:20:17-52
-75                android:value="" />
-75-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:21:17-33
-76        </activity>
-77        <activity
-77-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:64:9-70:20
-78            android:name="com.example.zachetka.SignInActivity"
-78-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:65:13-43
-79            android:exported="false" >
-79-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:66:13-37
-80            <meta-data
-80-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:19:13-21:36
-81                android:name="android.app.lib_name"
-81-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:20:17-52
-82                android:value="" />
-82-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:21:17-33
-83        </activity>
-84        <activity
-84-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:71:9-79:20
-85            android:name="com.example.zachetka.SplachActivity"
-85-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:72:13-43
-86            android:exported="true" >
-86-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:73:13-36
-87            <intent-filter>
-87-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:74:13-78:29
-88                <action android:name="android.intent.action.MAIN" />
-88-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:75:17-69
-88-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:75:25-66
-89
-90                <category android:name="android.intent.category.LAUNCHER" />
-90-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:77:17-77
-90-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:77:27-74
-91            </intent-filter>
-92        </activity>
-93
-94        <meta-data
-94-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:81:9-83:57
-95            android:name="preloaded_fonts"
-95-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:82:13-43
-96            android:resource="@array/preloaded_fonts" />
-96-->/Users/2isp19/Desktop/zachetka/Zachetka/app/src/main/AndroidManifest.xml:83:13-54
-97
-98        <uses-library
-98-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-99            android:name="androidx.window.extensions"
-99-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-100            android:required="false" />
-100-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-101        <uses-library
-101-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-102            android:name="androidx.window.sidecar"
-102-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-103            android:required="false" />
-103-->[androidx.window:window:1.0.0] /Users/2isp19/.gradle/caches/transforms-3/bf6d8bfd99a73e2f2b0788bf5ee92031/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-104
-105        <provider
-105-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-106            android:name="androidx.startup.InitializationProvider"
-106-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-107            android:authorities="com.example.markpgt.androidx-startup"
-107-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-108            android:exported="false" >
-108-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-109            <meta-data
-109-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-110-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-111                android:value="androidx.startup" />
-111-->[androidx.emoji2:emoji2:1.2.0] /Users/2isp19/.gradle/caches/transforms-3/098a093b559fcad3fa54a8e4f99bd925/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-112            <meta-data
-112-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/2isp19/.gradle/caches/transforms-3/9cf225b11a9413fa15ce28a37c4fd7cf/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-113-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/2isp19/.gradle/caches/transforms-3/9cf225b11a9413fa15ce28a37c4fd7cf/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-114                android:value="androidx.startup" />
-114-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/2isp19/.gradle/caches/transforms-3/9cf225b11a9413fa15ce28a37c4fd7cf/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-115        </provider>
-116    </application>
-117
-118</manifest>
+36-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:23:9-29:20
+37            android:name="com.example.zachetka.admin.EditUserActivity"
+37-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:24:13-51
+38            android:exported="false" >
+38-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:25:13-37
+39            <meta-data
+39-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+40                android:name="android.app.lib_name"
+40-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+41                android:value="" />
+41-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+42        </activity>
+43        <activity
+43-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:30:9-36:20
+44            android:name="com.example.zachetka.admin.AddUserActivity"
+44-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:31:13-50
+45            android:exported="false" >
+45-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:32:13-37
+46            <meta-data
+46-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+47                android:name="android.app.lib_name"
+47-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+48                android:value="" />
+48-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+49        </activity>
+50        <activity
+50-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:37:9-43:20
+51            android:name="com.example.zachetka.admin.EditUserModeActivity"
+51-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:38:13-55
+52            android:exported="false" >
+52-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:39:13-37
+53            <meta-data
+53-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+54                android:name="android.app.lib_name"
+54-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+55                android:value="" />
+55-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+56        </activity>
+57        <activity
+57-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:44:9-52:20
+58            android:name="com.example.zachetka.teacher.TeacherMainActivity"
+58-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:45:13-56
+59            android:exported="false"
+59-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:46:13-37
+60            android:label="@string/title_activity_teacher_main"
+60-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:47:13-64
+61            android:theme="@style/Theme.MarkPGT.NoActionBar" >
+61-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:48:13-61
+62            <meta-data
+62-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+63                android:name="android.app.lib_name"
+63-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+64                android:value="" />
+64-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+65        </activity>
+66        <activity
+66-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:53:9-60:20
+67            android:name="com.example.zachetka.teacher.TeacherRecordActivity"
+67-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:54:13-58
+68            android:exported="false"
+68-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:55:13-37
+69            android:screenOrientation="landscape" >
+69-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:56:13-50
+70            <meta-data
+70-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+71                android:name="android.app.lib_name"
+71-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+72                android:value="" />
+72-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+73        </activity>
+74        <activity
+74-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:61:9-67:20
+75            android:name="com.example.zachetka.admin.AdminMainActivity"
+75-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:62:13-52
+76            android:exported="false" >
+76-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:63:13-37
+77            <meta-data
+77-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+78                android:name="android.app.lib_name"
+78-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+79                android:value="" />
+79-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+80        </activity>
+81        <activity
+81-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:68:9-75:20
+82            android:name="com.example.zachetka.student.StudentRecordActivity"
+82-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:69:13-58
+83            android:exported="false"
+83-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:70:13-37
+84            android:screenOrientation="landscape" >
+84-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:71:13-50
+85            <meta-data
+85-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+86                android:name="android.app.lib_name"
+86-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+87                android:value="" />
+87-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+88        </activity>
+89        <activity
+89-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:76:9-84:20
+90            android:name="com.example.zachetka.student.StudentMainActivity"
+90-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:77:13-56
+91            android:exported="false"
+91-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:78:13-37
+92            android:label="@string/title_activity_main"
+92-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:79:13-56
+93            android:theme="@style/Theme.MarkPGT.NoActionBar" >
+93-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:80:13-61
+94            <meta-data
+94-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+95                android:name="android.app.lib_name"
+95-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+96                android:value="" />
+96-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+97        </activity>
+98        <activity
+98-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:85:9-91:20
+99            android:name="com.example.zachetka.SignInActivity"
+99-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:86:13-43
+100            android:exported="false" >
+100-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:87:13-37
+101            <meta-data
+101-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:19:13-21:36
+102                android:name="android.app.lib_name"
+102-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:20:17-52
+103                android:value="" />
+103-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:21:17-33
+104        </activity>
+105        <activity
+105-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:92:9-100:20
+106            android:name="com.example.zachetka.SplachActivity"
+106-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:93:13-43
+107            android:exported="true" >
+107-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:94:13-36
+108            <intent-filter>
+108-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:95:13-99:29
+109                <action android:name="android.intent.action.MAIN" />
+109-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:96:17-69
+109-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:96:25-66
+110
+111                <category android:name="android.intent.category.LAUNCHER" />
+111-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:98:17-77
+111-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:98:27-74
+112            </intent-filter>
+113        </activity>
+114
+115        <meta-data
+115-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:102:9-104:57
+116            android:name="preloaded_fonts"
+116-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:103:13-43
+117            android:resource="@array/preloaded_fonts" />
+117-->D:\Users\Microsoft\Desktop\zachetka\Zachetka\app\src\main\AndroidManifest.xml:104:13-54
+118
+119        <uses-library
+119-->[androidx.window:window:1.0.0] C:\Users\Microsoft\.gradle\caches\transforms-3\bf6d8bfd99a73e2f2b0788bf5ee92031\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+120            android:name="androidx.window.extensions"
+120-->[androidx.window:window:1.0.0] C:\Users\Microsoft\.gradle\caches\transforms-3\bf6d8bfd99a73e2f2b0788bf5ee92031\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+121            android:required="false" />
+121-->[androidx.window:window:1.0.0] C:\Users\Microsoft\.gradle\caches\transforms-3\bf6d8bfd99a73e2f2b0788bf5ee92031\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+122        <uses-library
+122-->[androidx.window:window:1.0.0] C:\Users\Microsoft\.gradle\caches\transforms-3\bf6d8bfd99a73e2f2b0788bf5ee92031\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+123            android:name="androidx.window.sidecar"
+123-->[androidx.window:window:1.0.0] C:\Users\Microsoft\.gradle\caches\transforms-3\bf6d8bfd99a73e2f2b0788bf5ee92031\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+124            android:required="false" />
+124-->[androidx.window:window:1.0.0] C:\Users\Microsoft\.gradle\caches\transforms-3\bf6d8bfd99a73e2f2b0788bf5ee92031\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+125
+126        <provider
+126-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Microsoft\.gradle\caches\transforms-3\098a093b559fcad3fa54a8e4f99bd925\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+127            android:name="androidx.startup.InitializationProvider"
+127-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Microsoft\.gradle\caches\transforms-3\098a093b559fcad3fa54a8e4f99bd925\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+128            android:authorities="com.example.markpgt.androidx-startup"
+128-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Microsoft\.gradle\caches\transforms-3\098a093b559fcad3fa54a8e4f99bd925\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+129            android:exported="false" >
+129-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Microsoft\.gradle\caches\transforms-3\098a093b559fcad3fa54a8e4f99bd925\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+130            <meta-data
+130-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Microsoft\.gradle\caches\transforms-3\098a093b559fcad3fa54a8e4f99bd925\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+131                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+131-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Microsoft\.gradle\caches\transforms-3\098a093b559fcad3fa54a8e4f99bd925\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+132                android:value="androidx.startup" />
+132-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Microsoft\.gradle\caches\transforms-3\098a093b559fcad3fa54a8e4f99bd925\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+133            <meta-data
+133-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Microsoft\.gradle\caches\transforms-3\9cf225b11a9413fa15ce28a37c4fd7cf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+134                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+134-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Microsoft\.gradle\caches\transforms-3\9cf225b11a9413fa15ce28a37c4fd7cf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+135                android:value="androidx.startup" />
+135-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Microsoft\.gradle\caches\transforms-3\9cf225b11a9413fa15ce28a37c4fd7cf\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+136        </provider>
+137    </application>
+138
+139</manifest>

@@ -27,6 +27,27 @@
         android:testOnly="true"
         android:theme="@style/Theme.MarkPGT" >
         <activity
+            android:name="com.example.zachetka.admin.DeleteUserActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.zachetka.admin.EditUserActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.zachetka.admin.AddUserActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.zachetka.admin.EditUserModeActivity"
             android:exported="false" >
             <meta-data

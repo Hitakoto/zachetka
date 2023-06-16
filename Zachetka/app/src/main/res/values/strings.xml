@@ -10,6 +10,9 @@
     <string name="hint_course">Логин</string>
     <string name="button_sign_text">Войти</string>
     <string name="button_save">Сохранить изменения</string>
+    <string name="button_add">Добавить</string>
+    <string name="button_edit">Изменить</string>
+    <string name="button_delete">Удалить</string>
     <string name="forgot"><u>Забыли пароль?</u></string>
     <string name="title_activity_main">StudentMainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -74,6 +77,9 @@
     <string name="title_activity_teacher_main">TeacherMainActivity</string>
 
     <string name="title_edit_mode">Режим редактирования</string>
+    <string name="title_add_mode">Добавление</string>
+    <string name="title_red_mode">Изменение</string>
+    <string name="title_del_mode">Удаление</string>
 
     <string name="text_stud">ФИО студента</string>
     <string name="text_group">Группа</string>
